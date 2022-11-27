@@ -1,0 +1,10 @@
+@use './globalPar/variables';   
+
+.about {
+    background-color: variables.$white;
+    
+    .wrapper {
+        text-align: center;
+        
+    }
+}

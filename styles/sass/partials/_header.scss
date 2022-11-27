@@ -1,0 +1,53 @@
+@use './globalPar/variables';
+
+header {
+    height: 80vh;
+    background-color: variables.$wine;
+    text-align: center;
+    color: variables.$white;
+
+    ul {
+        padding: 20px 0 250px;
+        display: flex;
+        justify-content: space-around;
+        width: 65%;
+        margin: 0 auto;
+        font-family: variables.$subheadingFont;
+
+
+        a:hover {
+            color: variables.$blue;
+            font-weight: bolder;
+            transition: ease-in-out;
+            }
+
+        }
+
+    h1, h3 {
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .button {
+        text-align: center;
+        display: inline-block;
+        margin: 0 auto;
+        background-color: variables.$blue;
+        padding: 15px 30px;
+        border: 1px solid variables.$white;
+        margin-top: 10px;
+        font-family: variables.$subheadingFont;
+        font-weight: bolder;
+        color: variables.$wine;
+
+    }
+
+    .button:hover {
+        cursor: pointer;
+        transition: ease-in-out;
+        padding:17px 33px;
+
+    
+        
+    }
+}

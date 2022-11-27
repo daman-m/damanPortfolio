@@ -1,0 +1,45 @@
+@use '../globalPar/variables';
+
+/* GENERAL STYLES */
+
+html {
+    font-size: 125%;
+}
+
+h1,h2,h3,p,ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 50px;
+    display: block;
+    // width: 400px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: variables.$headingFont;
+}
+
+h3, h4 {
+    font-family: variables.$subheadingFont;
+}
+
+h1 {
+    font-size: 3rem;
+}
