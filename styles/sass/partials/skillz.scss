@@ -1,0 +1,14 @@
+@use './globalPar/variables';   
+
+.skills {
+    background-color: variables.$pink;
+
+    .wrapper ul {
+        display: flex;
+        justify-content: space-evenly;
+
+        li {
+            display: inline-block;
+        }
+    }
+}

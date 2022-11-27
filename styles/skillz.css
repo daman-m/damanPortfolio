@@ -1,0 +1,14 @@
+.skills {
+  background-color: #9A879d;
+}
+.skills .wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.skills .wrapper ul li {
+  display: inline-block;
+}
