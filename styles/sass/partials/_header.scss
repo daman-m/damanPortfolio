@@ -16,7 +16,7 @@ header {
 
 
         a:hover {
-            color: variables.$blue;
+            color: variables.$green;
             font-weight: bolder;
             transition: ease-in-out;
             }
@@ -32,7 +32,7 @@ header {
         text-align: center;
         display: inline-block;
         margin: 0 auto;
-        background-color: variables.$blue;
+        background-color: variables.$green;
         padding: 15px 30px;
         border: 1px solid variables.$white;
         margin-top: 10px;

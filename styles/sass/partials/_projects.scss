@@ -3,13 +3,83 @@
 .projects {
     background-color: variables.$smokey;
 
-    .wrapper {
-        width: 80%;
-        margin: 0 auto;
+    .wrapper{
 
-        .projectListItems {
-            display: flex;
+        .reverse {
+            flex-direction: row-reverse;
+            border-top: 2px solid variables.$white;
+            border-bottom: 2px solid variables.$white;
+
+    
+            .projectinfo {
+                text-align: right;
+                padding-left: 0;
+                padding-right: 50px;
+            }
+        }
+        
+    }
+    
+    
+    .projectListItem {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 70%;
+        margin: 0 auto;
+        // align-items: baseline;
+
+        .imgContainer {
+            border: 3px solid black;
+            height: fit-content;
+            
+            }
+            
+            
+            .projectinfo {
+                text-align: left;
+                width: 45%;
+                padding-left: 50px;
+                width: 100%;
+                
+                h3 {
+                    font-size: 1.5rem;
+                    padding-bottom: 5px;
+                    font-family: variables.$headingFont;
+                }
+            
+                h4 {
+                    font-size: 0.9rem;
+                    margin-top: 0;
+                    color: variables.$wine;
+                }
+                
+                p {
+                    line-height: 1.2;
+                }
+
+                button {
+                    margin-top: 25px;
+                    padding: 10px 30px;
+                    appearance: none;
+                    background-color: variables.$green;
+                    border: 2px variables.$wine solid;
+                    color: variables.$wine;
+                    font-weight: bold;
+                    cursor: pointer;
+
+                }
+
+                button:hover,
+                button:focus {
+                    background-color: variables.$wine;
+                    color: variables.$green;
+                    transition: ease-in-out;
+                }
+            }
+
+            
 
         }
-    }
 }

@@ -299,7 +299,7 @@ header ul {
   font-family: "Roboto Condensed", sans-serif;
 }
 header ul a:hover {
-  color: #A5D8FF;
+  color: #CDEAC0;
   font-weight: bolder;
   -webkit-transition: ease-in-out;
   transition: ease-in-out;
@@ -312,7 +312,7 @@ header .button {
   text-align: center;
   display: inline-block;
   margin: 0 auto;
-  background-color: #A5D8FF;
+  background-color: #CDEAC0;
   padding: 15px 30px;
   border: 1px solid #FFFFFA;
   margin-top: 10px;
@@ -373,12 +373,88 @@ header .button:hover {
 .projects {
   background-color: #ebd4cb;
 }
-.projects .wrapper {
-  width: 80%;
-  margin: 0 auto;
+.projects .wrapper .reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  border-top: 2px solid #FFFFFA;
+  border-bottom: 2px solid #FFFFFA;
 }
-.projects .wrapper .projectListItems {
+.projects .wrapper .reverse .projectinfo {
+  text-align: right;
+  padding-left: 0;
+  padding-right: 50px;
+}
+.projects .projectListItem {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 70%;
+  margin: 0 auto;
+}
+.projects .projectListItem .imgContainer {
+  border: 3px solid black;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.projects .projectListItem .projectinfo {
+  text-align: left;
+  width: 45%;
+  padding-left: 50px;
+  width: 100%;
+}
+.projects .projectListItem .projectinfo h3 {
+  font-size: 1.5rem;
+  padding-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+.projects .projectListItem .projectinfo h4 {
+  font-size: 0.9rem;
+  margin-top: 0;
+  color: #912F56;
+}
+.projects .projectListItem .projectinfo p {
+  line-height: 1.2;
+}
+.projects .projectListItem .projectinfo button {
+  margin-top: 25px;
+  padding: 10px 30px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #CDEAC0;
+  border: 2px #912F56 solid;
+  color: #912F56;
+  font-weight: bold;
+  cursor: pointer;
+}
+.projects .projectListItem .projectinfo button:hover,
+.projects .projectListItem .projectinfo button:focus {
+  background-color: #912F56;
+  color: #CDEAC0;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+}
+
+.contact {
+  background-color: #b6465f;
+}
+.contact .wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 15%;
+  margin: 0 auto;
+}
+.contact .wrapper ul li a img {
+  width: 25px;
+  color: #CDEAC0;
 }
