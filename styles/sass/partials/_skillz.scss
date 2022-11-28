@@ -1,11 +1,12 @@
 @use './globalPar/variables';   
 
 .skills {
-    background-color: variables.$pink;
+    background-color: variables.$peach;
 
     .wrapper ul {
         display: flex;
         justify-content: space-evenly;
+        padding-top: 10px;
 
         li {
             display: inline-block;
@@ -13,17 +14,17 @@
             display: flex;
             justify-content: space-between;
             flex-direction: column;
-
+            
             img {
                 width: 80px;
                 height: 80px;
                 margin: 0 auto;
+            }  
+            
+            p {
+                font-family: variables.$subheadingFont;
+                
             }
-
-         
-
-
-          
         }
         
     }

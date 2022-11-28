@@ -52,7 +52,13 @@ header {
     }
 }
 
-.about .wrapper p {
-    width: 65%;
-    margin: 0 auto;
+.about {
+
+    background-color: variables.$smokey;
+
+
+    .wrapper p {
+        width: 65%;
+        margin: 0 auto;
+    }
 }

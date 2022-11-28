@@ -1,0 +1,15 @@
+@use './globalPar/variables';   
+
+.projects {
+    background-color: variables.$smokey;
+
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+
+        .projectListItems {
+            display: flex;
+
+        }
+    }
+}
