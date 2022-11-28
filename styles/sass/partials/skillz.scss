@@ -9,6 +9,22 @@
 
         li {
             display: inline-block;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            img {
+                width: 80px;
+                height: 80px;
+                margin: 0 auto;
+            }
+
+         
+
+
+          
         }
+        
     }
 }

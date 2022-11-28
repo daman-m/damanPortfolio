@@ -346,8 +346,20 @@ header .button:hover {
 }
 .skills .wrapper ul li {
   display: inline-block;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-
-* {
-  border: red 1px solid;
+.skills .wrapper ul li img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
 }
