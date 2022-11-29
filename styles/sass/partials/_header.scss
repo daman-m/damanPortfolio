@@ -1,7 +1,7 @@
 @use './globalPar/variables';
 
 header {
-    height: 80vh;
+    height: 100vh;
     background-color: variables.$wine;
     text-align: center;
     color: variables.$white;
@@ -10,12 +10,13 @@ header {
         padding: 20px 0 250px;
         display: flex;
         justify-content: space-around;
-        width: 65%;
+        width: 45%;
         margin: 0 auto;
         font-family: variables.$subheadingFont;
 
 
-        a:hover {
+        a:hover,
+        a:focus {
             color: variables.$green;
             font-weight: bolder;
             transition: ease-in-out;
@@ -27,6 +28,9 @@ header {
         text-align: center;
         padding: 5px 0;
     }
+    h1 {
+        padding-top: 70px;
+    }
 
     .button {
         text-align: center;
@@ -34,7 +38,7 @@ header {
         margin: 0 auto;
         background-color: variables.$green;
         padding: 15px 30px;
-        border: 1px solid variables.$white;
+        border: 2px solid variables.$smokey;
         margin-top: 10px;
         font-family: variables.$subheadingFont;
         font-weight: bolder;
@@ -42,13 +46,12 @@ header {
 
     }
 
-    .button:hover {
+    .button:hover,
+    .button:focus {
         cursor: pointer;
-        transition: ease-in-out;
-        padding:17px 33px;
-
-    
-        
+        transition: all .3s ease;
+        background-color: variables.$smokey;
+        font-size: 1.1rem;
     }
 }
 

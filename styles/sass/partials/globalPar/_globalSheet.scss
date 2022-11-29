@@ -4,6 +4,7 @@
 
 html {
     font-size: 125%;
+    // width: 1200px;
 }
 
 h1,h2,h3,p,ul {
@@ -54,6 +55,9 @@ p {
 section {
     padding: 100px 0;
     text-align: center;
+}
+.button {
+    font-family: variables.$subheadingFont;
 }
 
 // .button{

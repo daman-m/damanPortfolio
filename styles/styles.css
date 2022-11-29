@@ -281,8 +281,12 @@ section {
   text-align: center;
 }
 
+.button {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
 header {
-  height: 80vh;
+  height: 100vh;
   background-color: #912F56;
   text-align: center;
   color: #FFFFFA;
@@ -294,11 +298,12 @@ header ul {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 65%;
+  width: 45%;
   margin: 0 auto;
   font-family: "Roboto Condensed", sans-serif;
 }
-header ul a:hover {
+header ul a:hover,
+header ul a:focus {
   color: #CDEAC0;
   font-weight: bolder;
   -webkit-transition: ease-in-out;
@@ -308,23 +313,28 @@ header h1, header h3 {
   text-align: center;
   padding: 5px 0;
 }
+header h1 {
+  padding-top: 70px;
+}
 header .button {
   text-align: center;
   display: inline-block;
   margin: 0 auto;
   background-color: #CDEAC0;
   padding: 15px 30px;
-  border: 1px solid #FFFFFA;
+  border: 2px solid #ebd4cb;
   margin-top: 10px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bolder;
   color: #912F56;
 }
-header .button:hover {
+header .button:hover,
+header .button:focus {
   cursor: pointer;
-  -webkit-transition: ease-in-out;
-  transition: ease-in-out;
-  padding: 17px 33px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #ebd4cb;
+  font-size: 1.1rem;
 }
 
 .about {
@@ -397,11 +407,9 @@ header .button:hover {
   width: 70%;
   margin: 0 auto;
 }
-.projects .projectListItem .imgContainer {
-  border: 3px solid black;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+.projects .projectListItem .imgContainer img {
+  height: 250px;
+  width: 350px;
 }
 .projects .projectListItem .projectinfo {
   text-align: left;
@@ -422,8 +430,9 @@ header .button:hover {
 .projects .projectListItem .projectinfo p {
   line-height: 1.2;
 }
-.projects .projectListItem .projectinfo button {
-  margin-top: 25px;
+.projects .projectListItem .projectinfo .button {
+  display: inline-block;
+  margin-top: 23px;
   padding: 10px 30px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -434,16 +443,17 @@ header .button:hover {
   font-weight: bold;
   cursor: pointer;
 }
-.projects .projectListItem .projectinfo button:hover,
-.projects .projectListItem .projectinfo button:focus {
+.projects .projectListItem .projectinfo .button:hover,
+.projects .projectListItem .projectinfo .button:focus {
   background-color: #912F56;
   color: #CDEAC0;
-  -webkit-transition: ease-in-out;
-  transition: ease-in-out;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contact {
-  background-color: #b6465f;
+  background-color: #912F56;
+  color: #FFFFFA;
 }
 .contact .wrapper ul {
   display: -webkit-box;
@@ -453,8 +463,87 @@ header .button:hover {
       justify-content: space-around;
   width: 15%;
   margin: 0 auto;
+  padding-bottom: 15px;
+  height: 60px;
 }
 .contact .wrapper ul li a img {
   width: 25px;
   color: #CDEAC0;
+}
+.contact .wrapper ul a:hover img,
+.contact .wrapper ul a:focus img {
+  width: 27px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contact p {
+  width: 60%;
+  margin: 0 auto;
+}
+.contact fieldset {
+  width: 60%;
+  margin: 0 auto;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+}
+.contact fieldset form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-family: "Nunito Sans", sans-serif;
+}
+.contact fieldset form label {
+  padding: 10px 0;
+}
+.contact fieldset form input {
+  height: 40px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  -webkit-box-shadow: 0px 1px 1px 1px #000;
+          box-shadow: 0px 1px 1px 1px #000;
+}
+.contact fieldset form textarea {
+  border: none;
+  resize: none;
+  outline: none;
+  -webkit-box-shadow: 0px 1px 1px 1px #000;
+          box-shadow: 0px 1px 1px 1px #000;
+  margin-bottom: 10px;
+}
+.contact fieldset form .button {
+  width: 25%;
+  margin: 0 auto;
+  padding: 10px 30px;
+  border: none;
+  background-color: #CDEAC0;
+  font-weight: bold;
+  color: #912F56;
+  cursor: pointer;
+}
+.contact fieldset form .button:hover,
+.contact fieldset form .button:focus {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #ebd4cb;
+  font-size: 1.1rem;
+}
+
+footer {
+  background-color: #ebd4cb;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 2px solid #FFFFFA;
 }

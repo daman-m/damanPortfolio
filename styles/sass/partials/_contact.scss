@@ -1,18 +1,99 @@
 @use './globalPar/variables';
 
 .contact {
-    background-color: variables.$popstar;
+    background-color: variables.$wine;
+    color: variables.$white;
 
     .wrapper ul {
         display: flex;
         justify-content: space-around;
         width: 15%;
         margin: 0 auto;
+        padding-bottom: 15px;
+        height: 60px;
 
         li a img {
             width: 25px;
             color: variables.$green;
-
         }
+        
+        
+         a:hover img,
+         a:focus img {
+            width: 27px;
+            transition: all .3s ease;
+        }
+        
     }
+    p {
+        width: 60%;
+        margin: 0 auto;
+    }
+    fieldset {
+        width: 60%;
+        margin: 0 auto;
+        appearance: none;
+        border: none;
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            appearance: none;
+            font-family: variables.$textFont;
+
+            label {
+                padding:10px 0;
+                
+            }
+            
+            input {
+                height: 40px;
+                appearance: none;
+                border: none;
+                box-shadow: 0px 1px 1px 1px #000;
+                
+            }
+
+            textarea {
+                border: none;
+                resize: none;
+                outline: none;
+                box-shadow: 0px 1px 1px 1px #000;
+                margin-bottom: 10px;
+            }
+
+            .button {
+                width: 25%;
+                margin: 0 auto;
+                padding: 10px 30px;
+                border: none;
+                background-color: variables.$green;
+                font-weight: bold;
+                color: variables.$wine;
+                cursor: pointer;
+            } 
+
+            .button:hover,
+            .button:focus {
+                cursor: pointer;
+                transition: all .3s ease;
+                background-color: variables.$smokey;
+                font-size: 1.1rem;
+            }
+        }
+
+
+
+
+        
+    }
+}
+
+footer {
+    background-color: variables.$smokey;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid variables.$white;
 }

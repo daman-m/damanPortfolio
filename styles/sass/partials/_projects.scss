@@ -30,9 +30,9 @@
         margin: 0 auto;
         // align-items: baseline;
 
-        .imgContainer {
-            border: 3px solid black;
-            height: fit-content;
+        .imgContainer img {
+            height: 250px;
+            width: 350px;
             
             }
             
@@ -59,8 +59,9 @@
                     line-height: 1.2;
                 }
 
-                button {
-                    margin-top: 25px;
+                .button {
+                    display: inline-block;
+                    margin-top: 23px;
                     padding: 10px 30px;
                     appearance: none;
                     background-color: variables.$green;
@@ -71,11 +72,11 @@
 
                 }
 
-                button:hover,
-                button:focus {
+                .button:hover,
+                .button:focus {
                     background-color: variables.$wine;
                     color: variables.$green;
-                    transition: ease-in-out;
+                    transition: all .3s ease;
                 }
             }
 
