@@ -299,6 +299,8 @@ header .wrapper {
 @media (max-width: 1140px) {
   .projects .projectListItem .projectinfo {
     text-align: center;
+    margin-top: 10px;
+    padding-left: 40px;
   }
   .projects .projectListItem {
     -webkit-box-orient: vertical;
@@ -314,6 +316,20 @@ header .wrapper {
   }
   .contact .contactP {
     width: 80%;
+  }
+  .skills .wrapper ul li {
+    min-width: 120px;
+  }
+}
+@media (max-width: 815px) {
+  .projects .projectListItem .imgContainer {
+    width: 100%;
+  }
+  .projects .wrapper .projectListItem .imgContainer img {
+    width: 100%;
+  }
+  .contact .wrapper fieldset form .button {
+    width: 45%;
   }
 }
 header {
@@ -461,7 +477,7 @@ header .button:focus {
   width: 90%;
   margin: 0 auto;
 }
-.projects .wrapper .projectListItem .imgContainer img {
+.projects .wrapper .projectListItem img {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;

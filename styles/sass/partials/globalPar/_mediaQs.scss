@@ -1,7 +1,11 @@
 @media (max-width:1140px) {
  
+
+    // PROJECTSSS
     .projects .projectListItem .projectinfo {
         text-align: center;
+        margin-top: 10px;
+        padding-left: 40px;
     }
     .projects .projectListItem {
      flex-direction: column;
@@ -18,4 +22,32 @@
         width: 80%;
     }
 
+    // SKILLS
+
+    .skills .wrapper ul li {
+        min-width: 120px
+    }
+}
+
+
+// @815px
+
+@media (max-width:815px) {
+
+    // PROJECTS
+
+    .projects .projectListItem .imgContainer {
+        width: 100%;
+    
+    }
+    .projects .wrapper .projectListItem .imgContainer img {
+        width: 100%;
+    }
+
+    // CONTACT
+
+    .contact  .wrapper fieldset form .button {
+        width: 45%;
+    }
+    
 }
