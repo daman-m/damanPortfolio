@@ -1,0 +1,21 @@
+@media (max-width:1140px) {
+ 
+    .projects .projectListItem .projectinfo {
+        text-align: center;
+    }
+    .projects .projectListItem {
+     flex-direction: column;
+    }
+
+    .projects .projectListItem .imgContainer {
+        margin: 0 auto;
+    }
+
+    .contact .form {
+        width: 80%;
+    }
+    .contact .contactP {
+        width: 80%;
+    }
+
+}

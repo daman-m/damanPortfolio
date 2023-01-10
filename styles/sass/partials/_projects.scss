@@ -1,86 +1,78 @@
 @use './globalPar/variables';   
 
 .projects {
-    background-color: variables.$smokey;
-
-    .wrapper{
-
-        .reverse {
-            flex-direction: row-reverse;
-            border-top: 2px solid variables.$white;
-            border-bottom: 2px solid variables.$white;
-
     
-            .projectinfo {
-                text-align: right;
-                padding-left: 0;
-                padding-right: 50px;
+    .wrapper {
+
+        border-top: 2px  variables.$white solid;
+
+
+        
+        .projectListItem {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            width: 90%;
+            margin: 0 auto;
+            // align-items: baseline;
+    
+            .imgContainer img {
+                height: fit-content;
+                width: 550px;
+                }
+    
+            }
+                
+                
+        .projectinfo {
+            text-align: left;
+            width: 45%;
+            padding-left: 50px;
+            width: 100%;
+            
+            h3 {
+                font-size: 1.5rem;
+                padding-bottom: 5px;
+                font-family: variables.$headingFont;
+            }
+        
+            h4 {
+                font-size: 0.9rem;
+                margin-top: 0;
+                color: variables.$darkGrey;
+            }
+            
+            p {
+                line-height: 1.2;
+            }
+    
+            .button {
+                display: inline-block;
+                margin-top: 23px;
+                padding: 10px 30px;
+                appearance: none;
+                border: 2px variables.$darkGrey solid;
+                border-radius: 5px;
+                color: variables.$darkGrey;
+                font-weight: bold;
+                cursor: pointer;
+    
+            }
+    
+            .button:hover,
+            .button:focus {
+                background-color: variables.$gold;
+                color: variables.$white;
+                transition: all .3s ease;
+                border: 2px solid variables.$gold;
+                
             }
         }
-        
     }
     
-    
-    .projectListItem {
-        display: flex;
-        justify-content: space-around;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        width: 70%;
-        margin: 0 auto;
-        // align-items: baseline;
-
-        .imgContainer img {
-            height: 250px;
-            width: 350px;
-            
-            }
-            
-            
-            .projectinfo {
-                text-align: left;
-                width: 45%;
-                padding-left: 50px;
-                width: 100%;
-                
-                h3 {
-                    font-size: 1.5rem;
-                    padding-bottom: 5px;
-                    font-family: variables.$headingFont;
-                }
-            
-                h4 {
-                    font-size: 0.9rem;
-                    margin-top: 0;
-                    color: variables.$wine;
-                }
-                
-                p {
-                    line-height: 1.2;
-                }
-
-                .button {
-                    display: inline-block;
-                    margin-top: 23px;
-                    padding: 10px 30px;
-                    appearance: none;
-                    background-color: variables.$green;
-                    border: 2px variables.$wine solid;
-                    color: variables.$wine;
-                    font-weight: bold;
-                    cursor: pointer;
-
-                }
-
-                .button:hover,
-                .button:focus {
-                    background-color: variables.$wine;
-                    color: variables.$green;
-                    transition: all .3s ease;
-                }
-            }
 
             
 
-        }
+        
 }

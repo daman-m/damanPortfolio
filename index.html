@@ -15,22 +15,26 @@
         <div class="wrapper">
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
-            <h1>DAMAN MATHAROO</h1>
-            <h3>Toronto based web developer</h3>
-            <a class="button" href="#contact">Get in Touch</a>
+            <h1>DAMAN <span>MATHAROO</span></h1>
+            <h3><span id="webDev"></span> <span id="blinker">|</span></h3>
+            <a class="button" href="#contact">get in touch</a>
         </div><!-- END WRAPPER -->
     </header>
     <main>
         <section id="about" class="about">
-            <div class="wrapper">
+            <div class="wrapper wrap">
                 <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, doloribus. Ad maiores adipisci dolor eveniet ab ratione tenetur a assumenda voluptates corporis omnis, minus eos cumque, tempora, culpa magni. Vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, doloribus. Ad maiores adipisci dolor eveniet ab ratione tenetur a assumenda voluptates corporis omnis, minus eos cumque, tempora, culpa magni. Vero</p>
+                <p>Hi, my name is <span> Daman </span> and I'm a <span> web developer</span>. I am passionate about creating engaging, accessible and responsive websites and apps. I have worked in the customer service industry for nearly a decade where I was able to develop my aptitude for effective communication, leadership and complex problem-solving. I recognize the importance of client satisfaction and understanding the clients needs. This enables me to better assist my clients with their technological needs and provide them with the best experience possible.
+                    <br>
+                    <br>
+                
+                When I'm not making cool websites, I like to watch anime, play soccer and drink coffee.</p>
             </div><!-- END WRAPPER -->
         </section>
         <section class="skills">
@@ -90,27 +94,49 @@
         <section id="projects" class="projects">
             <div class="wrapper">
                 <h2>Projects</h2>
+
                 <div class="projectListItem">
                     <div class="imgContainer">
-                        <img src="./assets/pOneShot.png" alt="screenshot of 'Sanctuary Helpers'project ">
+                        <img src="./assets/notInstaDeviceShots.png" alt="screenshot of 'Not Insta' project">
                     </div><!-- END IMG CONTAINER -->
                     <div class="projectinfo">
-                        <h3>Sanctuary Helpers</h3>
-                        <h4>HTML, CSS, SCSS, JAVASCRIPT </h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat quos laboriosam accusantium? Consectetur, perferendis cupiditate.</p>
-                        <a class="button" href="https://delightful-otter-8fb98c.netlify.app/index.html" target="_blank">View Live</a>
-                        <a class="button" href="https://github.com/daman-m/DamanMatharooProjectOne.git" target="_blank">View Code</a>
-                    </div> <!-- END PROJECT INFO -->
+                        <h3>Not Insta</h3>
+                        <h4> ReactJS | RESTful API | Firebase | CSS </h4>
+                        <p> Shared gallery for users to post pictures. Anyone can add a
+                            picture to the gallery and it will update in real time.
+                            Developed the React application from scratch using Firebase
+                            services such as Firestore and Firebase Storage.
+                        </p>
+                        <a class="button" href="https://notinsta.netlify.app/" target="_blank">View Live</a>
+                        <a class="button" href="https://github.com/daman-m/notInsta" target="_blank">View Code</a>
+                    </div><!-- END PORJECT INFO -->
+                </div><!-- END PROJECT LIST ITEM -->
+
+                <div class="projectListItem">
+                    <div class="imgContainer">
+                        <img src="./assets/wordGameDeviceShots.png" alt="screenshot of 'What do you know?' project">
+                    </div><!-- END IMG CONTAINER -->
+                    <div class="projectinfo">
+                        <h3>What do you know?</h3>
+                        <h4> ReactJS | RESTful API | Firebase | CSS </h4>
+                        <p> A homophone word game. Users are presented with two words,
+                            one definition and must match the correct word to the definition.
+                            Contributed to the logic of the random question generator and
+                            the API calls to manipulate word options and definitions.
+                        </p>
+                        <a class="button" href="https://whatchuknohuh.netlify.app/" target="_blank">View Live</a>
+                        <a class="button" href="https://github.com/JunoProjectFour/whatchaKnoHuh" target="_blank">View Code</a>
+                    </div><!-- END PORJECT INFO -->
                 </div><!-- END PROJECT LIST ITEM -->
 
                 <div class="projectListItem reverse">
                     <div class="imgContainer">
-                        <img src="./assets/pTwoShot.png" alt="screenshot of 'Rick & Morty Characters' project">
+                        <img src="./assets/rickDeviceShots.png" alt="screenshot of 'Rick & Morty Characters' project">
                     </div><!-- END IMG CONTAINER -->
                     <div class="projectinfo">
                         <h3>Rick & Morty Characters</h3>
-                        <h4>HTML, CSS, SCSS, JAVASCRIPT, API</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat quos laboriosam accusantium? Consectetur, perferendis cupiditate.</p>
+                        <h4>HTML | CSS | SCSS | JAVASCRIPT | API</h4>
+                        <p>This is an app that lets you pick from a preset list of 5 characters. We are using an api call to Rick and Morty Api which then outputs the name, character status (whether they're alive or dead) species, and gender onto the character card below.</p>
                         <a class="button" href="https://aidendamanapiprojecttwo.netlify.app/" target="_blank">View Live</a>
                         <a class="button" href="https://github.com/APIJunoProject/AidenDamanProjectTwo.git" target="_blank">View Code</a>
                     </div> <!-- END PROJECT INFO -->
@@ -118,16 +144,18 @@
 
                 <div class="projectListItem">
                     <div class="imgContainer">
-                        <img src="./assets/aOneShot.png" alt="screenshot of 'Animal Refugee' project">
+                        <img src="./assets/sancHelpDeviceShots.png" alt="screenshot of 'Sanctuary Helpers'project ">
                     </div><!-- END IMG CONTAINER -->
                     <div class="projectinfo">
-                        <h3>Animal Refugee</h3>
-                        <h4>HTML, CSS, SCSS</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat quos laboriosam accusantium? Consectetur, perferendis cupiditate.</p>
-                        <a class="button" href="https://peppy-banoffee-79f736.netlify.app/" target="_blank">View Live</a>
-                        <a class="button" href="https://github.com/daman-m/damanMatharoo-assignment1.git" target="_blank">View Code</a>
-                    </div><!-- END PORJECT INFO -->
+                        <h3>Sanctuary Helpers</h3>
+                        <h4>HTML | CSS | SCSS | JAVASCRIPT </h4>
+                        <p>A multi-page PSD conversion project where a webpage was built from a given design while keeping the page responsive at all sizes.</p>
+                        <a class="button" href="https://delightful-otter-8fb98c.netlify.app/index.html" target="_blank">View Live</a>
+                        <a class="button" href="https://github.com/daman-m/DamanMatharooProjectOne.git" target="_blank">View Code</a>
+                    </div> <!-- END PROJECT INFO -->
                 </div><!-- END PROJECT LIST ITEM -->
+
+                
             </div><!-- END WRAPPER -->
         </section>
         <section id="contact" class="contact">
@@ -144,24 +172,20 @@
                             <img src="./assets/githubGreen.svg" alt="A link to my Github page">
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <img src="./assets/email.svg" alt="A placeholder image, for design only">
-                        </a>
-                    </li>
+                
                 </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, odit minus exercitationem sit modi a? Mo words to make this look nice.</p>
+                <p class="contactP">Woah! You made it all the way down here so you must be impressed. I appreciate you taking the time to see what I've been working on. Please feel free to send a message, email, or connect with me on LinkedIn.</p>
 
-                <fieldset>
+                <fieldset class="form">
                     <form action="https://formspree.io/f/mwkzjdak" method="POST" class="getInTouchForm" name="getInTouchForm">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" class="name">
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name" class="name" placeholder="name">
 
-                        <label for="email">Email</label>
-                        <input type="text" id="name" name="email" class="name">
+                        <label for="email"></label>
+                        <input type="text" id="name" name="email" class="name" placeholder="email">
 
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" class="messageArea" cols="30" rows="10"></textarea>
+                        <label for="message"></label>
+                        <textarea name="message" id="message" class="messageArea" cols="30" rows="10" placeholder="message"></textarea>
 
                         <button class="button" type="submit" formtarget="_blank"> Submit</button>
 
@@ -179,5 +203,37 @@
             <p>Created by Daman Matharoo 2022</p>
         </div>
     </footer>
+    <script>
+        function sleep(ms) {
+            return new Promise((resolve) => setTimeout(resolve, ms))
+        }
+
+        const webDev = ['Web Developer'];
+        const el = document.getElementById("webDev");
+
+        let sleepTime = 150;
+
+        let curPhraseIndex = 0;
+
+        const writeLoop = async () => {
+
+                let curWord = webDev[curPhraseIndex];
+                console.log(curWord);
+
+                for (let i = 0; i <curWord.length; i++ ) {
+                    el.innerText = curWord.substring(0,i + 1);
+                    await sleep(sleepTime);
+
+                }
+
+                await sleep(sleepTime * 10);
+    
+        };
+
+        writeLoop()
+
+
+
+    </script>
 </body>
 </html>

@@ -5,6 +5,10 @@
 html {
     font-size: 125%;
     // width: 1200px;
+    // background-color: variables.$white;
+}
+body {
+    background-color: variables.$background;
 }
 
 h1,h2,h3,p,ul {
@@ -53,10 +57,19 @@ p {
 }
 
 section {
-    padding: 100px 0;
     text-align: center;
+}
+.wrapper {
+    padding: 100px 0;
+}
+header .wrapper {
+    padding-top: 50px;
 }
 .button {
     font-family: variables.$subheadingFont;
 }
+//  * {
+//     border: 1px solid red;
+//  }
+
 

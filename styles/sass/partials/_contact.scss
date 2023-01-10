@@ -1,34 +1,13 @@
 @use './globalPar/variables';
 
 .contact {
-    background-color: variables.$wine;
-    color: variables.$white;
+    color: variables.$black;
 
-    .wrapper ul {
-        display: flex;
-        justify-content: space-around;
-        width: 15%;
-        margin: 0 auto;
-        padding-bottom: 15px;
-        height: 60px;
+    .wrapper {
+        border-top: 2px solid variables.$white;
+    }
 
-        li a img {
-            width: 25px;
-            color: variables.$green;
-        }
-        
-        
-         a:hover img,
-         a:focus img {
-            width: 27px;
-            transition: all .3s ease;
-        }
-        
-    }
-    p {
-        width: 60%;
-        margin: 0 auto;
-    }
+
     fieldset {
         width: 60%;
         margin: 0 auto;
@@ -44,7 +23,7 @@
             font-family: variables.$textFont;
 
             label {
-                padding:10px 0;
+                padding:20px 0;
                 
             }
             
@@ -52,26 +31,33 @@
                 height: 40px;
                 appearance: none;
                 border: none;
-                box-shadow: 0px 1px 1px 1px #000;
+                background-color: variables.$background;
+                border-bottom: 2px solid variables.$darkGrey;
+
                 
             }
 
             textarea {
-                border: none;
+
+                border: 2px solid variables.$darkGrey;
+                padding: 10px;
+                border-radius: 5px;
                 resize: none;
                 outline: none;
-                box-shadow: 0px 1px 1px 1px #000;
                 margin-bottom: 10px;
+                background-color: variables.$background;
+
             }
 
             .button {
                 width: 25%;
                 margin: 0 auto;
                 padding: 10px 30px;
-                border: none;
-                background-color: variables.$green;
+                border: 2px solid variables.$darkGrey;
+                background-color: variables.$background;
+                border-radius: 5px;
                 font-weight: bold;
-                color: variables.$wine;
+                color: variables.$darkGrey;
                 cursor: pointer;
             } 
 
@@ -79,21 +65,50 @@
             .button:focus {
                 cursor: pointer;
                 transition: all .3s ease;
-                background-color: variables.$smokey;
+                background-color: variables.$gold;
                 font-size: 1.1rem;
+                border: 2px solid variables.$gold;
+                color: variables.$white;
             }
+        }   
+    }
+
+    .wrapper ul {
+        display: flex;
+        justify-content: space-around;
+        width: 15%;
+        margin: 0 auto;
+        padding-bottom: 15px;
+        height: 60px;
+
+        li a img {
+            width: 25px;
+            color: variables.$white;
         }
-
-
-
-
+        
+        
+         a:hover img,
+         a:focus img {
+            width: 27px;
+            transition: all .3s ease;
+        }
         
     }
+    p {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+
 }
 
 footer {
-    background-color: variables.$smokey;
+    .wrapper {
+        padding: 0;
+    }
+
     text-align: center;
     padding: 10px 0;
+    color: variables.$black;
     border-top: 2px solid variables.$white;
 }

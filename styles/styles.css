@@ -231,6 +231,10 @@ html {
   font-size: 125%;
 }
 
+body {
+  background-color: #CED0CE;
+}
+
 h1, h2, h3, p, ul {
   margin: 0;
   padding: 0;
@@ -277,19 +281,45 @@ p {
 }
 
 section {
-  padding: 100px 0;
   text-align: center;
+}
+
+.wrapper {
+  padding: 100px 0;
+}
+
+header .wrapper {
+  padding-top: 50px;
 }
 
 .button {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+@media (max-width: 1140px) {
+  .projects .projectListItem .projectinfo {
+    text-align: center;
+  }
+  .projects .projectListItem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects .projectListItem .imgContainer {
+    margin: 0 auto;
+  }
+  .contact .form {
+    width: 80%;
+  }
+  .contact .contactP {
+    width: 80%;
+  }
+}
 header {
   height: 100vh;
-  background-color: #912F56;
   text-align: center;
-  color: #FFFFFA;
+  color: #716969;
 }
 header ul {
   padding: 20px 0 250px;
@@ -304,7 +334,7 @@ header ul {
 }
 header ul a:hover,
 header ul a:focus {
-  color: #CDEAC0;
+  border-bottom: 2px solid #E0B700;
   font-weight: bolder;
   -webkit-transition: ease-in-out;
   transition: ease-in-out;
@@ -315,43 +345,80 @@ header h1, header h3 {
 }
 header h1 {
   padding-top: 70px;
+  color: #716969;
+}
+header h3 {
+  color: #02182B;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+}
+header h3 #blinker {
+  color: #E0B700;
+  -webkit-animation: blink 1s linear infinite;
+          animation: blink 1s linear infinite;
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
 }
 header .button {
   text-align: center;
   display: inline-block;
   margin: 0 auto;
-  background-color: #CDEAC0;
+  border: 2px solid #716969;
+  border-radius: 5px;
   padding: 15px 30px;
-  border: 2px solid #ebd4cb;
   margin-top: 10px;
   font-family: "Roboto Condensed", sans-serif;
-  font-weight: bolder;
-  color: #912F56;
+  color: #716969;
 }
 header .button:hover,
 header .button:focus {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background-color: #ebd4cb;
+  background-color: #E0B700;
   font-size: 1.1rem;
+  color: #F7EDF0;
+  border: 1px solid #E0B700;
 }
 
 .about {
-  background-color: #ebd4cb;
+  text-align: left;
+  color: #02182B;
+}
+.about .wrapper {
+  border-top: 2px #F7EDF0 solid;
 }
 .about .wrapper p {
   width: 65%;
-  margin: 0 auto;
+}
+.about .wrapper p span {
+  color: #E0B700;
+  font-weight: bolder;
 }
 
-.skills {
-  background-color: #da9f93;
+.skills .wrapper {
+  border-top: 2px #F7EDF0 solid;
 }
 .skills .wrapper ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -380,23 +447,10 @@ header .button:focus {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-.projects {
-  background-color: #ebd4cb;
+.projects .wrapper {
+  border-top: 2px #F7EDF0 solid;
 }
-.projects .wrapper .reverse {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  border-top: 2px solid #FFFFFA;
-  border-bottom: 2px solid #FFFFFA;
-}
-.projects .wrapper .reverse .projectinfo {
-  text-align: right;
-  padding-left: 0;
-  padding-right: 50px;
-}
-.projects .projectListItem {
+.projects .wrapper .projectListItem {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,81 +458,61 @@ header .button:focus {
       justify-content: space-around;
   padding-top: 40px;
   padding-bottom: 40px;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 }
-.projects .projectListItem .imgContainer img {
-  height: 250px;
-  width: 350px;
+.projects .wrapper .projectListItem .imgContainer img {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 550px;
 }
-.projects .projectListItem .projectinfo {
+.projects .wrapper .projectinfo {
   text-align: left;
   width: 45%;
   padding-left: 50px;
   width: 100%;
 }
-.projects .projectListItem .projectinfo h3 {
+.projects .wrapper .projectinfo h3 {
   font-size: 1.5rem;
   padding-bottom: 5px;
   font-family: "Montserrat", sans-serif;
 }
-.projects .projectListItem .projectinfo h4 {
+.projects .wrapper .projectinfo h4 {
   font-size: 0.9rem;
   margin-top: 0;
-  color: #912F56;
+  color: #716969;
 }
-.projects .projectListItem .projectinfo p {
+.projects .wrapper .projectinfo p {
   line-height: 1.2;
 }
-.projects .projectListItem .projectinfo .button {
+.projects .wrapper .projectinfo .button {
   display: inline-block;
   margin-top: 23px;
   padding: 10px 30px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: #CDEAC0;
-  border: 2px #912F56 solid;
-  color: #912F56;
+  border: 2px #716969 solid;
+  border-radius: 5px;
+  color: #716969;
   font-weight: bold;
   cursor: pointer;
 }
-.projects .projectListItem .projectinfo .button:hover,
-.projects .projectListItem .projectinfo .button:focus {
-  background-color: #912F56;
-  color: #CDEAC0;
+.projects .wrapper .projectinfo .button:hover,
+.projects .wrapper .projectinfo .button:focus {
+  background-color: #E0B700;
+  color: #F7EDF0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  border: 2px solid #E0B700;
 }
 
 .contact {
-  background-color: #912F56;
-  color: #FFFFFA;
+  color: #02182B;
 }
-.contact .wrapper ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 15%;
-  margin: 0 auto;
-  padding-bottom: 15px;
-  height: 60px;
-}
-.contact .wrapper ul li a img {
-  width: 25px;
-  color: #CDEAC0;
-}
-.contact .wrapper ul a:hover img,
-.contact .wrapper ul a:focus img {
-  width: 27px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.contact p {
-  width: 60%;
-  margin: 0 auto;
+.contact .wrapper {
+  border-top: 2px solid #F7EDF0;
 }
 .contact fieldset {
   width: 60%;
@@ -503,7 +537,7 @@ header .button:focus {
   font-family: "Nunito Sans", sans-serif;
 }
 .contact fieldset form label {
-  padding: 10px 0;
+  padding: 20px 0;
 }
 .contact fieldset form input {
   height: 40px;
@@ -511,25 +545,27 @@ header .button:focus {
      -moz-appearance: none;
           appearance: none;
   border: none;
-  -webkit-box-shadow: 0px 1px 1px 1px #000;
-          box-shadow: 0px 1px 1px 1px #000;
+  background-color: #CED0CE;
+  border-bottom: 2px solid #716969;
 }
 .contact fieldset form textarea {
-  border: none;
+  border: 2px solid #716969;
+  padding: 10px;
+  border-radius: 5px;
   resize: none;
   outline: none;
-  -webkit-box-shadow: 0px 1px 1px 1px #000;
-          box-shadow: 0px 1px 1px 1px #000;
   margin-bottom: 10px;
+  background-color: #CED0CE;
 }
 .contact fieldset form .button {
   width: 25%;
   margin: 0 auto;
   padding: 10px 30px;
-  border: none;
-  background-color: #CDEAC0;
+  border: 2px solid #716969;
+  background-color: #CED0CE;
+  border-radius: 5px;
   font-weight: bold;
-  color: #912F56;
+  color: #716969;
   cursor: pointer;
 }
 .contact fieldset form .button:hover,
@@ -537,13 +573,43 @@ header .button:focus {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background-color: #ebd4cb;
+  background-color: #E0B700;
   font-size: 1.1rem;
+  border: 2px solid #E0B700;
+  color: #F7EDF0;
+}
+.contact .wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 15%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  height: 60px;
+}
+.contact .wrapper ul li a img {
+  width: 25px;
+  color: #F7EDF0;
+}
+.contact .wrapper ul a:hover img,
+.contact .wrapper ul a:focus img {
+  width: 27px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contact p {
+  width: 60%;
+  margin: 0 auto;
 }
 
 footer {
-  background-color: #ebd4cb;
   text-align: center;
   padding: 10px 0;
-  border-top: 2px solid #FFFFFA;
+  color: #02182B;
+  border-top: 2px solid #F7EDF0;
+}
+footer .wrapper {
+  padding: 0;
 }

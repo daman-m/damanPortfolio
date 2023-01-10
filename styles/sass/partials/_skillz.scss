@@ -1,31 +1,37 @@
 @use './globalPar/variables';   
 
 .skills {
-    background-color: variables.$peach;
+    
+    .wrapper {
+        border-top: 2px  variables.$white solid;
 
-    .wrapper ul {
-        display: flex;
-        justify-content: space-evenly;
-        padding-top: 10px;
-
-        li {
-            display: inline-block;
-            height: 100px;
+        ul {
             display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            
-            img {
-                width: 80px;
-                height: 80px;
-                margin: 0 auto;
-            }  
-            
-            p {
-                font-family: variables.$subheadingFont;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding-top: 10px;
+    
+            li {
+                display: inline-block;
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
                 
+                img {
+                    width: 80px;
+                    height: 80px;
+                    margin: 0 auto;
+                }  
+                
+                p {
+                    font-family: variables.$subheadingFont;
+                    
+                }
             }
+
+            
         }
-        
     }
+    
 }

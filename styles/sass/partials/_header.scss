@@ -2,9 +2,8 @@
 
 header {
     height: 100vh;
-    background-color: variables.$wine;
     text-align: center;
-    color: variables.$white;
+    color: variables.$darkGrey;
 
     ul {
         padding: 20px 0 250px;
@@ -17,7 +16,7 @@ header {
 
         a:hover,
         a:focus {
-            color: variables.$green;
+            border-bottom: 2px solid variables.$gold;
             font-weight: bolder;
             transition: ease-in-out;
             }
@@ -30,19 +29,41 @@ header {
     }
     h1 {
         padding-top: 70px;
+        color: variables.$darkGrey;
+
+         
+       
+    }
+    h3 {
+        color: variables.$black;
+        font-size: 3rem;
+        font-family: variables.$headingFont;
+
+        #blinker {
+            color: variables.$gold;
+            animation: blink 1s linear infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 100%;
+            }
+            50% {
+                opacity: 0%;
+            }
+        }
     }
 
     .button {
         text-align: center;
         display: inline-block;
         margin: 0 auto;
-        background-color: variables.$green;
+        border: 2px solid variables.$darkGrey;
+        border-radius: 5px;
         padding: 15px 30px;
-        border: 2px solid variables.$smokey;
         margin-top: 10px;
         font-family: variables.$subheadingFont;
-        font-weight: bolder;
-        color: variables.$wine;
+        color: variables.$darkGrey;
 
     }
 
@@ -50,18 +71,28 @@ header {
     .button:focus {
         cursor: pointer;
         transition: all .3s ease;
-        background-color: variables.$smokey;
+        background-color: variables.$gold;
         font-size: 1.1rem;
+        color: variables.$white;
+        border: 1px solid variables.$gold;
     }
 }
 
 .about {
-
-    background-color: variables.$smokey;
-
-
-    .wrapper p {
-        width: 65%;
-        margin: 0 auto;
+    text-align: left;
+    color: variables.$black;
+    .wrapper {
+        border-top: 2px  variables.$white solid;
+        p {
+            width: 65%;
+            span {
+                color: variables.$gold;
+                font-weight: bolder;
+            }
+        
+        }
     }
+    
+    
+    
 }
