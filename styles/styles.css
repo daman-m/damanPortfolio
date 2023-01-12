@@ -383,6 +383,9 @@ header .wrapper {
   body .wrapper {
     width: 85%;
   }
+  body .contact .wrapper ul {
+    width: 50%;
+  }
 }
 header {
   height: 100vh;
