@@ -543,9 +543,6 @@ header .button:focus {
   margin: 0 auto;
 }
 .projects .wrapper .projectListItem img {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   width: 550px;
 }
 .projects .wrapper .projectinfo {
