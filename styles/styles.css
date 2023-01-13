@@ -488,6 +488,7 @@ header .button:focus {
 }
 .about .wrapper p {
   width: 65%;
+  line-height: 1.5;
 }
 .about .wrapper p span {
   color: #E0B700;
