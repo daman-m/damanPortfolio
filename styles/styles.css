@@ -297,10 +297,10 @@ header .wrapper {
 }
 
 @media (max-width: 1140px) {
-  .projects .projectListItem .projectinfo {
+  body .projects .projectListItem .projectinfo {
     text-align: center;
     margin-top: 10px;
-    padding-left: 40px;
+    padding-left: 0;
   }
   .projects .projectListItem {
     -webkit-box-orient: vertical;
@@ -385,6 +385,9 @@ header .wrapper {
   }
   body .contact .wrapper ul {
     width: 50%;
+  }
+  body .about .wrapper p {
+    width: 95%;
   }
 }
 header {

@@ -5,10 +5,10 @@
  
 
     // PROJECTSSS
-    .projects .projectListItem .projectinfo {
+    body .projects .projectListItem .projectinfo {
         text-align: center;
         margin-top: 10px;
-        padding-left: 40px;
+        padding-left: 0;
     }
     .projects .projectListItem {
      flex-direction: column;
@@ -110,6 +110,10 @@
     }
     body .contact .wrapper ul {
         width:50%;
+    }
+
+    body .about .wrapper p {
+        width: 95%
     }
 
 }
