@@ -103,7 +103,7 @@ header {
     .flexBox {
         display: flex;
         justify-content: space-between;
-        // flex-direction: column-reverse;
+        align-items: center;
 
         .info {
             width: 65%;
