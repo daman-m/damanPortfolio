@@ -322,6 +322,19 @@ header .wrapper {
   }
 }
 @media (max-width: 815px) {
+  .about .flexBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about .wrapper .flexBox .imgContainer {
+    margin-right: 0%;
+    margin-bottom: 5px;
+  }
   .projects .projectListItem .imgContainer {
     width: 100%;
   }
@@ -353,7 +366,7 @@ header .wrapper {
   .navMenu {
     position: fixed;
     left: -100%;
-    top: 70px;
+    top: 0px;
     gap: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -489,13 +502,39 @@ header .button:focus {
 .about .wrapper {
   border-top: 2px #F7EDF0 solid;
 }
-.about .wrapper p {
+.about .flexBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.about .flexBox .info {
   width: 65%;
+}
+.about .flexBox .info p {
   line-height: 1.5;
 }
-.about .wrapper p span {
-  color: #E0B700;
+.about .flexBox .info p span {
+  border-bottom: 2px solid #E0B700;
   font-weight: bolder;
+}
+.about .flexBox .imgContainer {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  border: 2px solid #E0B700;
+  margin-right: 10px;
+}
+.about .flexBox .imgContainer img {
+  width: 300px;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .skills .wrapper {
@@ -513,18 +552,20 @@ header .button:focus {
   padding-top: 10px;
 }
 .skills .wrapper ul li {
-  display: inline-block;
-  height: 100px;
+  margin: 30px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  width: calc(16.6666666667% - 40px);
 }
 .skills .wrapper ul li img {
   width: 80px;
@@ -533,6 +574,28 @@ header .button:focus {
 }
 .skills .wrapper ul li p {
   font-family: "Roboto Condensed", sans-serif;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+.skills .wrapper ul li span {
+  display: block;
+}
+.skills .wrapper ul li .devicon-firebase-plain,
+.skills .wrapper ul li .fa-bolt {
+  font-size: 3rem;
+}
+.skills .wrapper ul li i {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.skills .wrapper ul li i:hover,
+.skills .wrapper ul li i:focus {
+  cursor: cell;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .projects .wrapper {
@@ -570,6 +633,10 @@ header .button:focus {
 }
 .projects .wrapper .projectinfo p {
   line-height: 1.2;
+}
+.projects .wrapper .projectinfo a {
+  text-decoration: underline;
+  cursor: pointer;
 }
 .projects .wrapper .projectinfo .button {
   display: inline-block;

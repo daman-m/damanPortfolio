@@ -96,18 +96,39 @@ header {
 .about {
     text-align: left;
     color: variables.$black;
-    .wrapper {
+    .wrapper{
         border-top: 2px  variables.$white solid;
-        p {
-            width: 65%;
-            span {
-                color: variables.$gold;
-                font-weight: bolder;
-            }
-        line-height: 1.5;
-        }
+
     }
+    .flexBox {
+        display: flex;
+        justify-content: space-between;
+        // flex-direction: column-reverse;
+
+        .info {
+            width: 65%;
+
+            p {
+                span {
+                    border-bottom: 2px solid variables.$gold;
+                    font-weight: bolder;
+                }
+            line-height: 1.5;
+            }
+        }
+        .imgContainer {
+            height: fit-content;
+            width: fit-content;
+            border-radius: 50%;
+            border: 2px solid variables.$gold;
+            margin-right: 10px;
     
-    
+            img {
+                width: 300px;
+                padding: 10px;
+                border-radius: 50%;
+            }
+        };
+    }
     
 }

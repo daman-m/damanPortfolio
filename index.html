@@ -9,11 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/c6e0ae9053.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+
+
 </head>
 <body>
     <header id="home">
@@ -38,66 +39,79 @@
     </header>
     <main>
         <section id="about" class="about">
-            <div class="wrapper wrap">
+            
+            <div class="wrapper">
                 <h2>About Me</h2>
-                <p>Hi, my name is <span> Daman </span> and I'm a <span> web developer</span>. I am passionate about creating engaging, accessible and responsive websites and apps. I have worked in the customer service industry for nearly a decade where I was able to develop my aptitude for effective communication, leadership and complex problem-solving. I recognize the importance of client satisfaction and understanding the clients needs. This enables me to better assist my clients with their technological needs and provide them with the best experience possible.
-                    <br>
-                    <br>
-                
-                When I'm not making cool websites, I like to watch anime, play soccer and explore new coffee shops around the city.</p>
-            </div><!-- END WRAPPER -->
+                <div class="flexBox">
+                    <div class="info">
+                        <p>Hi, my name is <span> Daman </span> and I'm a <span> web developer</span>. I am passionate about creating engaging, accessible and responsive websites and apps. I have worked in the customer service industry for nearly a decade where I was able to develop my aptitude for effective communication, leadership and complex problem-solving. I recognize the importance of client satisfaction and understanding the clients needs. This enables me to better assist my clients with their technological needs and provide them with the best experience possible.
+                            <br>
+                            <br>
+                        
+                            When I'm not making cool websites, I like to watch anime, play soccer and explore new coffee shops around the city.</p>
+                    </div>
+                        <div class="imgContainer">
+                        <img class="profilePic" src="./assets/portfolioPic.jpg" alt="picture of Daman with water behind him.">
+                        </div>
+                </div>
+
+                </div><!-- END WRAPPER -->
         </section>
         <section class="skills">
             <div class="wrapper">
                 <h2>Skills</h2>
-                <ul>
-                    <li>
-                        <!-- <div class="imgContainer"> -->
-                            <img src="./assets/html5.svg" alt="html icon">
-                        <!-- </div>END IMG CONTAINER -->
-                        <p>HTML</p>
-                    </li>
-
-                    <li>
-                        <!-- <div class="imgContainer"> -->
-                            <img src="./assets/css3.svg" alt="css icon">
-                        <!-- </div>END IMG CONTAINER -->
-                        <p>CSS</p>
-                    </li>
-
-                    <li>
-                        <!-- <div class="imgContainer"> -->
-                            <img src="./assets/sass.svg" alt="scss icon">
-                        <!-- </div>END IMG CONTAINER -->
-                        <p>SASS</p>
-                    </li>
-
-                    <li>
-                        <!-- <div class="imgContainer"> -->
-                            <img src="./assets/square-js.svg" alt="javascript icon">
-                        <!-- </div>END IMG CONTAINER -->
-                        <p>JAVASCRIPT</p>
-                    </li>
-
-                    <li>
-                        <!-- <div class="imgContainer"> -->
-                            <img src="./assets/react.svg" alt="react icon">
-                        <!-- </div>END IMG CONTAINER -->
-                        <p>REACT</p>
-                    </li>
-                    <li>
-                        <!-- <div class="imgContainer"> -->
-                            <img src="./assets/github.svg" alt="github icon">
-                        <!-- </div>END IMG CONTAINER -->
-                        <p>GITHUB/GIT</p>
-                    </li>
-                    <li>
-                        <!-- <div class="imgContainer"> -->
-                            <img src="./assets/firebase.svg" alt="firebase icon">
-                        <!-- </div>END IMG CONTAINER -->
-                        <p>FIREBASE</p>
-                    </li>
-                </ul>
+                <div class="icons">
+                    <ul>
+                        <li>
+                            <i class="fa-brands fa-html5 fa-3x" aria-hidden="true"></i>
+                            <p>HTML5</p>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-css3-alt fa-3x" aria-hidden="true"></i>
+                            <p>CSS3</p>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-sass fa-3x" aria-hidden="true"></i>
+                            <p>Sass</p>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-square-js fa-3x" aria-hidden="true"></i>
+                            <p>JavaScript</p>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-react fa-3x" aria-hidden="true"></i>
+                            <p>React</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                            <p>Chakra UI</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-gears fa-3x" aria-hidden="true"></i>
+                            <p>RESTful <span>APIs</span></p>
+                        </li>
+                        <li>
+                            <i class="devicon-firebase-plain" aria-hidden="true"></i>
+                            <p>Firebase</p>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-git-alt fa-3x" aria-hidden="true"></i>
+                            <p>Git</p>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-github fa-3x" aria-hidden="true"></i>
+                            <p>GitHub</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen-button fa-3x" aria-hidden="true"></i>
+                            <p>Responsive <span>Design</span></p>
+                        </li>
+                        <li><i class="fa-solid fa-universal-access fa-3x" aria-hidden="true"></i>
+                            <p>Web <span>Accessibility</span></p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
             </div><!-- END WRAPPER -->
         </section>
 
@@ -111,11 +125,8 @@
                     </div><!-- END IMG CONTAINER -->
                     <div class="projectinfo">
                         <h3>Not Insta</h3>
-                        <h4> ReactJS | RESTful API | Firebase | CSS </h4>
-                        <p> Shared gallery for users to post pictures. Anyone can add a
-                            picture to the gallery and it will update in real time.
-                            Developed the React application from scratch using Firebase
-                            services such as Firestore and Firebase Storage.
+                        <h4> ReactJS | RESTful API | Firebase | CSS | Chakra UI </h4>
+                        <p> This is a full stack social media website. Users can sign up and post pictures to a shared gallery. They can also interact with other posts by liking and commenting. Built using Firebase authentication and database built using Firebase cloud firestore and storage.
                         </p>
                         <a class="button" href="https://notinsta.netlify.app/" target="_blank">View Live</a>
                         <a class="button" href="https://github.com/daman-m/notInsta" target="_blank">View Code</a>
@@ -129,29 +140,13 @@
                     <div class="projectinfo">
                         <h3>What do you know?</h3>
                         <h4> ReactJS | RESTful API | Firebase | CSS </h4>
-                        <p> A homophone word game. Users are presented with two words,
-                            one definition and must match the correct word to the definition.
-                            Contributed to the logic of the random question generator and
-                            the API calls to manipulate word options and definitions.
+                        <p> This is a fun homophonous word game. Using APIs to find the words and definition. Users will be presented with two randomly generated homophonous words and need to select the correct one. 
                         </p>
                         <a class="button" href="https://whatchuknohuh.netlify.app/" target="_blank">View Live</a>
                         <a class="button" href="https://github.com/JunoProjectFour/whatchaKnoHuh" target="_blank">View Code</a>
                     </div><!-- END PORJECT INFO -->
                 </div><!-- END PROJECT LIST ITEM -->
-
-                <div class="projectListItem reverse">
-                    <div class="imgContainer">
-                        <img src="./assets/rickDeviceShots.png" alt="screenshot of 'Rick & Morty Characters' project">
-                    </div><!-- END IMG CONTAINER -->
-                    <div class="projectinfo">
-                        <h3>Rick & Morty Characters</h3>
-                        <h4>HTML | CSS | SCSS | JAVASCRIPT | API</h4>
-                        <p>This is an app that lets you pick from a preset list of 5 characters. We are using an api call to Rick and Morty Api which then outputs the name, character status (whether they're alive or dead) species, and gender onto the character card below.</p>
-                        <a class="button" href="https://aidendamanapiprojecttwo.netlify.app/" target="_blank">View Live</a>
-                        <a class="button" href="https://github.com/APIJunoProject/AidenDamanProjectTwo.git" target="_blank">View Code</a>
-                    </div> <!-- END PROJECT INFO -->
-                </div><!-- END PROJECT LIST ITEM -->
-
+             
                 <div class="projectListItem">
                     <div class="imgContainer">
                         <img src="./assets/sancHelpDeviceShots.png" alt="screenshot of 'Sanctuary Helpers'project ">
@@ -159,7 +154,7 @@
                     <div class="projectinfo">
                         <h3>Sanctuary Helpers</h3>
                         <h4>HTML | CSS | SCSS | JAVASCRIPT </h4>
-                        <p>A multi-page PSD conversion project where a webpage was built from a given design while keeping the page responsive at all sizes.</p>
+                        <p>A multi-page PSD conversion based on <a href="https://drive.google.com/drive/folders/1rEQw1xk0HskftulZ9P_4hQATE0KUHAHu?usp=share_link" target="_blank">these files</a> while keeping the page responsive at all sizes.</p>
                         <a class="button" href="https://delightful-otter-8fb98c.netlify.app/index.html" target="_blank">View Live</a>
                         <a class="button" href="https://github.com/daman-m/DamanMatharooProjectOne.git" target="_blank">View Code</a>
                     </div> <!-- END PROJECT INFO -->

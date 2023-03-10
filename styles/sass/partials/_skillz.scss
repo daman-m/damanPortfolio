@@ -1,5 +1,7 @@
 @use './globalPar/variables';   
 
+
+
 .skills {
     
     .wrapper {
@@ -10,14 +12,17 @@
             flex-wrap: wrap;
             justify-content: space-evenly;
             padding-top: 10px;
+
+            
     
             li {
-                display: inline-block;
-                height: 100px;
+                margin: 30px 20px;
                 display: flex;
-                justify-content: space-between;
                 flex-direction: column;
-                
+                align-items: center;
+                transition: .3s ease;
+                width: calc((100%/6) - 40px);
+        
                 img {
                     width: 80px;
                     height: 80px;
@@ -26,8 +31,31 @@
                 
                 p {
                     font-family: variables.$subheadingFont;
+                    margin-top: 10px;
+                    font-size: 1rem;
+                    text-align: center;
                     
                 }
+                
+                span {
+                    display: block;
+                }
+
+                .devicon-firebase-plain,
+                .fa-bolt {
+                font-size: 3rem;
+            }
+            
+                i {
+                    transition: transform .2s;
+                }
+            
+                i:hover,
+                i:focus {
+                    cursor:cell;
+                    transform: scale(1.2);
+                }
+            
             }
 
             
@@ -35,3 +63,9 @@
     }
     
 }
+//SKILLS 
+
+
+
+
+
