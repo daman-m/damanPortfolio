@@ -48,8 +48,12 @@
             }
 
             a {
-                text-decoration: underline;
                 cursor: pointer;
+            }
+
+            p a {
+                text-decoration: underline;
+
             }
     
             .button {
