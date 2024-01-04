@@ -227,12 +227,16 @@ html {
 }
 
 /* GENERAL STYLES */
+* {
+  border: 1px solid red !important;
+}
+
 html {
   font-size: 125%;
 }
 
 body {
-  background-color: #CED0CE;
+  background-color: #FFFFFF;
 }
 
 h1, h2, h3, p, ul {
@@ -345,51 +349,14 @@ header .wrapper {
     width: 45%;
   }
 }
-@media (max-width: 730px) {
-  header nav .hamburger {
-    display: block;
-    z-index: 10;
-    position: fixed;
-    right: 20px;
+@media (max-width: 900px) {
+  header nav ul a {
+    display: none;
   }
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(1) {
-    -webkit-transform: translateY(8px) rotate(45deg);
-            transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(3) {
-    -webkit-transform: translateY(-8px) rotate(-45deg);
-            transform: translateY(-8px) rotate(-45deg);
-  }
-  .navMenu {
-    position: fixed;
-    left: -100%;
-    top: 0px;
-    gap: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: #CED0CE;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    z-index: 10;
-    padding: 0;
-  }
-  .navMenu li {
-    margin: 25px;
-    font-size: larger;
-  }
-  .navMenu.active {
-    left: 0;
+  header nav ul .mobileMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media (max-width: 500px) {
@@ -422,91 +389,84 @@ header {
   text-align: center;
   color: #716969;
 }
-header .hamburger {
-  display: none;
-  cursor: pointer;
-}
-header .hamburger .bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #716969;
-}
-header ul {
-  padding: 20px 0 250px;
+header nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 45%;
-  margin: 0 auto;
-  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.7rem;
+  height: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  left: 0;
+  padding: 25px 40px 25px 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
 }
-header ul a:hover,
-header ul a:focus {
-  border-bottom: 2px solid #E0B700;
-  font-weight: bolder;
-  -webkit-transition: ease-in-out;
-  transition: ease-in-out;
+header .landingPage {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10rem;
+  height: 65rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
 }
-header h1, header h3 {
-  text-align: center;
-  padding: 5px 0;
+header .hook {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
 }
-header h1 {
-  padding-top: 70px;
-  color: #716969;
+header .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 50rem;
+  position: relative;
 }
-header h3 {
-  color: #02182B;
-  font-size: 3rem;
-  font-family: "Montserrat", sans-serif;
-}
-header h3 #blinker {
-  color: #E0B700;
-  -webkit-animation: blink 1s linear infinite;
-          animation: blink 1s linear infinite;
-}
-@-webkit-keyframes blink {
-  0% {
-    opacity: 100%;
-  }
-  50% {
-    opacity: 0%;
-  }
-}
-@keyframes blink {
-  0% {
-    opacity: 100%;
-  }
-  50% {
-    opacity: 0%;
-  }
-}
-header .button {
-  text-align: center;
-  display: inline-block;
-  margin: 0 auto;
-  border: 2px solid #716969;
-  border-radius: 5px;
-  padding: 15px 30px;
-  margin-top: 10px;
-  font-family: "Roboto Condensed", sans-serif;
-  color: #716969;
-}
-header .button:hover,
-header .button:focus {
+header .text span {
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background-color: #E0B700;
-  font-size: 1.1rem;
-  color: #F7EDF0;
-  border: 1px solid #E0B700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.3rem;
+  margin: 2.5rem 0;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+nav ul .mobileMenu {
+  display: none;
 }
 
 .about {
@@ -716,7 +676,7 @@ header .button:focus {
      -moz-appearance: none;
           appearance: none;
   border: none;
-  background-color: #CED0CE;
+  background-color: #FFFFFF;
   border-bottom: 2px solid #716969;
 }
 .contact fieldset form textarea {
@@ -726,14 +686,14 @@ header .button:focus {
   resize: none;
   outline: none;
   margin-bottom: 10px;
-  background-color: #CED0CE;
+  background-color: #FFFFFF;
 }
 .contact fieldset form .button {
   width: 25%;
   margin: 0 auto;
   padding: 10px 30px;
   border: 2px solid #716969;
-  background-color: #CED0CE;
+  background-color: #FFFFFF;
   border-radius: 5px;
   font-weight: bold;
   color: #716969;

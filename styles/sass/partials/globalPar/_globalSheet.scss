@@ -1,7 +1,10 @@
 @use '../globalPar/variables';
 
 /* GENERAL STYLES */
+* {
+    border: 1px solid red !important;
 
+}
 html {
     font-size: 125%;
     // width: 1200px;

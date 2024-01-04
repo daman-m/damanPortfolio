@@ -5,91 +5,61 @@ header {
     text-align: center;
     color: variables.$darkGrey;
 
-    
-        .hamburger {
-            display: none;
-            cursor: pointer;
+    nav { 
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    display: flex;
+    font-size: 1.7rem;
+    height: auto;
+    justify-content: space-between;
+    left: 0;
+    padding: 25px 40px 25px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
 
-            .bar {
-                display: block;
-                width:25px;
-                height: 3px;
-                margin: 5px auto;
-                transition: all 0.3s ease-in-out;
-                background-color: variables.$darkGrey;  
-            }
-        }
-
-    ul {
-        padding: 20px 0 250px;
+        
+    }
+    .landingPage {
+        align-items: center;
         display: flex;
-        justify-content: space-around;
-        width: 45%;
-        margin: 0 auto;
-        font-family: variables.$subheadingFont;
-
-
-        a:hover,
-        a:focus {
-            border-bottom: 2px solid variables.$gold;
-            font-weight: bolder;
-            transition: ease-in-out;
-            }
-
-        }
-
-    h1, h3 {
-        text-align: center;
-        padding: 5px 0;
+        gap: 10rem;
+        height: 65rem;
+        justify-content: center;
+        position: relative;
     }
-    h1 {
-        padding-top: 70px;
-        color: variables.$darkGrey;
-
-         
-       
-    }
-    h3 {
-        color: variables.$black;
-        font-size: 3rem;
-        font-family: variables.$headingFont;
-
-        #blinker {
-            color: variables.$gold;
-            animation: blink 1s linear infinite;
-        }
-
-        @keyframes blink {
-            0% {
-                opacity: 100%;
-            }
-            50% {
-                opacity: 0%;
-            }
-        }
+    .hook {
+            align-items: center;
+            display: flex;
+            gap: 10rem;
+            justify-content: center;
+            position: relative;
     }
 
-    .button {
-        text-align: center;
-        display: inline-block;
-        margin: 0 auto;
-        border: 2px solid variables.$darkGrey;
-        border-radius: 5px;
-        padding: 15px 30px;
-        margin-top: 10px;
-        font-family: variables.$subheadingFont;
-        color: variables.$darkGrey;
 
-    }
+    .text {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    position: relative;
 
-    .button:hover,
-    .button:focus {
+    span {
         cursor: pointer;
-        transition: all .3s ease;
-        background-color: variables.$gold;
-        font-size: 1.1rem;
-        color: variables.$white;
-        border: 1px solid variables.$gold;
+        display: flex;
+        gap: 1.3rem;
+        margin: 2.5rem 0;
+    }
+    }
+}
+ nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+
+    .mobileMenu {
+        display: none;
     }
 }
 

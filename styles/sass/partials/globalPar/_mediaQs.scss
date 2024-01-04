@@ -67,49 +67,17 @@
 }
 
 
-@media (max-width:730px) {
-    header nav .hamburger {
-        display: block;
-        z-index: 10;
-        position: fixed;
-        right: 20px;
+@media (max-width:900px) {
+    header nav ul a {
+        display: none;
     }
 
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    } 
-    .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    } 
-
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    } 
-
-    .navMenu {
-        position: fixed;
-        left: -100%;
-        top:0px;
-        gap: 0;
-        flex-direction: column;
-        justify-content: center;
-        background-color: variables.$background;
-        width: 100%;
-        height: 100vh;
-        text-align: center;
-        transition: 0.3s;
-        z-index: 10;
-        padding: 0;
+    header nav ul .mobileMenu {
+        display: flex;
     }
 
-    .navMenu li {
-        margin: 25px;
-        font-size: larger;
-    }
+    
 
-    .navMenu.active {
-        left: 0;
-    }
 }
 
 @media (max-width:500px) {
