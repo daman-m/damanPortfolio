@@ -1,14 +1,13 @@
 @use './globalPar/variables';
 
 header {
-    height: 100vh;
-    text-align: center;
-    color: variables.$darkGrey;
+  text-align: center;
+  color: variables.$darkGrey;
 
-    nav { 
+  nav {
     align-items: center;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .09);
     display: flex;
     font-size: 1.7rem;
     height: auto;
@@ -19,86 +18,109 @@ header {
     top: 0;
     width: 100%;
     z-index: 200;
+  }
 
-        
-    }
-    .landingPage {
+  .landing {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    // width: 100%;
+
+    .container {
+      margin: 0 auto;
+      max-width: 107rem;
+      padding: 0 8rem;
+
+      .content {
         align-items: center;
         display: flex;
         gap: 10rem;
-        height: 65rem;
+        height: 35rem;
         justify-content: center;
         position: relative;
+      }
     }
-    .hook {
-            align-items: center;
-            display: flex;
-            gap: 10rem;
-            justify-content: center;
-            position: relative;
-    }
+  }
+
+  .landingMain {
+    align-items: center;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    position: relative;
+  }
 
 
-    .text {
+
+  .text {
     display: flex;
     flex-direction: column;
     max-width: 50rem;
     position: relative;
 
     span {
-        cursor: pointer;
-        display: flex;
-        gap: 1.3rem;
-        margin: 2.5rem 0;
+      cursor: pointer;
+      display: flex;
+      gap: 1.3rem;
+      margin: 2.5rem 0;
     }
-    }
-}
- nav ul {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
+  }
 
-    .mobileMenu {
-        display: none;
+  .imgContainer {
+    height: fit-content;
+    width: fit-content;
+    border-radius: 50%;
+    border: 2px solid variables.$gold;
+    margin-right: 10px;
+
+    img {
+      width: 300px;
+      padding: 10px;
+      border-radius: 50%;
     }
+  }
+
+  ;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+
+  .mobileMenu {
+    display: none;
+  }
 }
 
 .about {
-    text-align: left;
-    color: variables.$black;
-    .wrapper{
-        border-top: 2px  variables.$white solid;
+  text-align: left;
+  color: variables.$black;
 
-    }
-    .flexBox {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  .wrapper {
+    border-top: 2px variables.$white solid;
 
-        .info {
-            width: 65%;
+  }
 
-            p {
-                span {
-                    border-bottom: 2px solid variables.$gold;
-                    font-weight: bolder;
-                }
-            line-height: 1.5;
-            }
+  .flexBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .info {
+      width: 65%;
+
+      p {
+        span {
+          border-bottom: 2px solid variables.$gold;
+          font-weight: bolder;
         }
-        .imgContainer {
-            height: fit-content;
-            width: fit-content;
-            border-radius: 50%;
-            border: 2px solid variables.$gold;
-            margin-right: 10px;
-    
-            img {
-                width: 300px;
-                padding: 10px;
-                border-radius: 50%;
-            }
-        };
+
+        line-height: 1.5;
+      }
     }
-    
+  }
+
 }

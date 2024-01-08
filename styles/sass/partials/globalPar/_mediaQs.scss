@@ -75,9 +75,24 @@
     header nav ul .mobileMenu {
         display: flex;
     }
+     body header .landing .container {
+        padding: 0 4rem;
+     } 
 
-    
+    header .landing .landingMain {
+        flex-direction: column-reverse;
+        gap: 3rem;
+        height: auto;
+        text-align: center;
+        padding-top: 2rem;
+    }
 
+    header .landing .text span {
+        gap: 1.6rem;
+        justify-content: center;
+        margin-bottom: 4rem;
+
+    }
 }
 
 @media (max-width:500px) {
