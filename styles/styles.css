@@ -232,7 +232,7 @@ html {
 }
 
 body {
-  background-color: #CED0CE;
+  background-color: #F9F9F9;
 }
 
 h1, h2, h3, p, ul {
@@ -375,7 +375,7 @@ header .wrapper {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: #CED0CE;
+    background-color: #F9F9F9;
     width: 100%;
     height: 100vh;
     text-align: center;
@@ -448,7 +448,7 @@ header ul {
 }
 header ul a:hover,
 header ul a:focus {
-  border-bottom: 2px solid #E0B700;
+  border-bottom: 2px solid #279AF1;
   font-weight: bolder;
   -webkit-transition: ease-in-out;
   transition: ease-in-out;
@@ -467,7 +467,7 @@ header h3 {
   font-family: "Montserrat", sans-serif;
 }
 header h3 #blinker {
-  color: #E0B700;
+  color: #279AF1;
   -webkit-animation: blink 1s linear infinite;
           animation: blink 1s linear infinite;
 }
@@ -503,10 +503,10 @@ header .button:focus {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background-color: #E0B700;
+  background-color: #279AF1;
   font-size: 1.1rem;
   color: #F7EDF0;
-  border: 1px solid #E0B700;
+  border: 1px solid #279AF1;
 }
 
 .about {
@@ -534,7 +534,7 @@ header .button:focus {
   line-height: 1.5;
 }
 .about .flexBox .info p span {
-  border-bottom: 2px solid #E0B700;
+  border-bottom: 2px solid #279AF1;
   font-weight: bolder;
 }
 .about .flexBox .imgContainer {
@@ -545,7 +545,7 @@ header .button:focus {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 50%;
-  border: 2px solid #E0B700;
+  border: 2px solid #279AF1;
   margin-right: 10px;
 }
 .about .flexBox .imgContainer img {
@@ -672,11 +672,11 @@ header .button:focus {
 }
 .projects .wrapper .projectinfo .button:hover,
 .projects .wrapper .projectinfo .button:focus {
-  background-color: #E0B700;
+  background-color: #279AF1;
   color: #F7EDF0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  border: 2px solid #E0B700;
+  border: 2px solid #279AF1;
 }
 
 .contact {
@@ -716,7 +716,7 @@ header .button:focus {
      -moz-appearance: none;
           appearance: none;
   border: none;
-  background-color: #CED0CE;
+  background-color: #F9F9F9;
   border-bottom: 2px solid #716969;
 }
 .contact fieldset form textarea {
@@ -726,14 +726,14 @@ header .button:focus {
   resize: none;
   outline: none;
   margin-bottom: 10px;
-  background-color: #CED0CE;
+  background-color: #F9F9F9;
 }
 .contact fieldset form .button {
   width: 25%;
   margin: 0 auto;
   padding: 10px 30px;
   border: 2px solid #716969;
-  background-color: #CED0CE;
+  background-color: #F9F9F9;
   border-radius: 5px;
   font-weight: bold;
   color: #716969;
@@ -744,9 +744,9 @@ header .button:focus {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background-color: #E0B700;
+  background-color: #279AF1;
   font-size: 1.1rem;
-  border: 2px solid #E0B700;
+  border: 2px solid #279AF1;
   color: #F7EDF0;
 }
 .contact .wrapper ul {
