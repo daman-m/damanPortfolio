@@ -84,7 +84,15 @@
         gap: 3rem;
         height: auto;
         text-align: center;
-        padding-top: 2rem;
+    }
+
+    body header .landing .container .content {
+        padding-top: 10rem;
+        height: auto;
+    }
+
+    header .landing .text {
+        text-align: center;
     }
 
     header .landing .text span {
@@ -95,33 +103,4 @@
     }
 }
 
-@media (max-width:500px) {
-    html {
-        font-size: 1rem;
-    }
-    
-    body header h1 {
-        padding-top: 200px;
-    }
-    body .wrapper {
-        width: 85%;
-    }
-    body .contact .wrapper ul {
-        width:50%;
-    }
 
-    body .about .wrapper p {
-        width: 95%
-    }
-
-    body .about .flexBox .info {
-        width: 100%
-    }
-
-    body .about .flexBox .info p {
-        margin-top: 10px;
-        width: 100%;
-        text-align: justify;
-    }
-
-}

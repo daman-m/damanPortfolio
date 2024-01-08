@@ -27,11 +27,14 @@ header {
     height: 100vh;
     position: relative;
     // width: 100%;
+    border: 1px solid red;
 
     .container {
       margin: 0 auto;
       max-width: 107rem;
-      padding: 0 8rem;
+      padding: 0 4rem;
+      border: 1px solid blue;
+
 
       .content {
         align-items: center;
@@ -40,6 +43,8 @@ header {
         height: 35rem;
         justify-content: center;
         position: relative;
+        border: 1px solid green;
+
       }
     }
   }
@@ -59,6 +64,7 @@ header {
     flex-direction: column;
     max-width: 50rem;
     position: relative;
+    text-align: left;
 
     span {
       cursor: pointer;
@@ -95,32 +101,32 @@ nav ul {
   }
 }
 
-.about {
-  text-align: left;
-  color: variables.$black;
+// .about {
+//   text-align: left;
+//   color: variables.$black;
 
-  .wrapper {
-    border-top: 2px variables.$white solid;
+//   .wrapper {
+//     border-top: 2px variables.$white solid;
 
-  }
+//   }
 
-  .flexBox {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+//   .flexBox {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
 
-    .info {
-      width: 65%;
+//     .info {
+//       width: 65%;
 
-      p {
-        span {
-          border-bottom: 2px solid variables.$gold;
-          font-weight: bolder;
-        }
+//       p {
+//         span {
+//           border-bottom: 2px solid variables.$gold;
+//           font-weight: bolder;
+//         }
 
-        line-height: 1.5;
-      }
-    }
-  }
+//         line-height: 1.5;
+//       }
+//     }
+//   }
 
-}
+// }

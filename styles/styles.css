@@ -227,10 +227,6 @@ html {
 }
 
 /* GENERAL STYLES */
-* {
-  border: 1px solid red !important;
-}
-
 html {
   font-size: 125%;
 }
@@ -369,7 +365,13 @@ header .wrapper {
     gap: 3rem;
     height: auto;
     text-align: center;
-    padding-top: 2rem;
+  }
+  body header .landing .container .content {
+    padding-top: 10rem;
+    height: auto;
+  }
+  header .landing .text {
+    text-align: center;
   }
   header .landing .text span {
     gap: 1.6rem;
@@ -377,31 +379,6 @@ header .wrapper {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 4rem;
-  }
-}
-@media (max-width: 500px) {
-  html {
-    font-size: 1rem;
-  }
-  body header h1 {
-    padding-top: 200px;
-  }
-  body .wrapper {
-    width: 85%;
-  }
-  body .contact .wrapper ul {
-    width: 50%;
-  }
-  body .about .wrapper p {
-    width: 95%;
-  }
-  body .about .flexBox .info {
-    width: 100%;
-  }
-  body .about .flexBox .info p {
-    margin-top: 10px;
-    width: 100%;
-    text-align: justify;
   }
 }
 header {
@@ -441,11 +418,13 @@ header .landing {
           flex-direction: column;
   height: 100vh;
   position: relative;
+  border: 1px solid red;
 }
 header .landing .container {
   margin: 0 auto;
   max-width: 107rem;
-  padding: 0 8rem;
+  padding: 0 4rem;
+  border: 1px solid blue;
 }
 header .landing .container .content {
   -webkit-box-align: center;
@@ -460,6 +439,7 @@ header .landing .container .content {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  border: 1px solid green;
 }
 header .landingMain {
   -webkit-box-align: center;
@@ -484,6 +464,7 @@ header .text {
           flex-direction: column;
   max-width: 50rem;
   position: relative;
+  text-align: left;
 }
 header .text span {
   cursor: pointer;
@@ -519,35 +500,6 @@ nav ul {
 }
 nav ul .mobileMenu {
   display: none;
-}
-
-.about {
-  text-align: left;
-  color: #02182B;
-}
-.about .wrapper {
-  border-top: 2px #F7EDF0 solid;
-}
-.about .flexBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.about .flexBox .info {
-  width: 65%;
-}
-.about .flexBox .info p {
-  line-height: 1.5;
-}
-.about .flexBox .info p span {
-  border-bottom: 2px solid #E0B700;
-  font-weight: bolder;
 }
 
 .skills .wrapper {
