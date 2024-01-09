@@ -35,7 +35,49 @@
 
 // @815px
 
-@media (max-width:815px) {
+@media (max-width:900px) {
+
+    //HOME
+
+    body header .content  { 
+        padding-top: 5rem;
+    }
+    body header .content span {
+        justify-content: center;
+    }
+
+
+    body header .content h1 {
+        font-size: 2rem;
+        padding-top: 20px;
+    }
+
+    body header .content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    body header .content .img {
+        margin: 0 auto;
+    }
+
+    body header .content .text {
+        width:auto
+    }
+
+    header .techStack {
+        flex-direction: column;
+    }
+
+    header .techStack p {
+        border-bottom: 2px solid rgba(45,46,50,.5);
+        border-right: none;
+        margin-bottom: 1.5rem;
+        margin-right: 0;
+        padding-bottom: 1rem;
+        padding-right: 0;
+    }
+
+
 
     //ABOUT
 
@@ -117,9 +159,7 @@
         font-size: 1rem;
     }
     
-    body header h1 {
-        padding-top: 200px;
-    }
+  
     body .wrapper {
         width: 85%;
     }
