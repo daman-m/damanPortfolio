@@ -2,75 +2,33 @@
 
 .contact {
     color: variables.$black;
+    background-color: #fff;
+    h2 {
+        text-align: left;
+        color: variables.$gold;
+        font-family: variables.$subheadingFont;
+        font-size: 1.3rem;
+        padding-bottom: 0px;
+      }
+
+      .text {
+        // border: 1px solid red;
+
+        // width: 65%;
+        text-align: left;
+      }
+      span {
+        // border: 1px solid red;
+
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+  
+      }
 
     .wrapper {
-        border-top: 2px solid variables.$white;
-    }
-
-
-    fieldset {
-        width: 60%;
-        margin: 0 auto;
-        appearance: none;
-        border: none;
-
-
-        form {
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-            appearance: none;
-            font-family: variables.$textFont;
-
-            label {
-                padding:20px 0;
-                
-            }
-            
-            input {
-                height: 40px;
-                appearance: none;
-                border: none;
-                background-color: variables.$background;
-                border-bottom: 2px solid variables.$darkGrey;
-
-                
-            }
-
-            textarea {
-
-                border: 2px solid variables.$darkGrey;
-                padding: 10px;
-                border-radius: 5px;
-                resize: none;
-                outline: none;
-                margin-bottom: 10px;
-                background-color: variables.$background;
-
-            }
-
-            .button {
-                width: 25%;
-                margin: 0 auto;
-                padding: 10px 30px;
-                border: 2px solid variables.$darkGrey;
-                background-color: variables.$background;
-                border-radius: 5px;
-                font-weight: bold;
-                color: variables.$darkGrey;
-                cursor: pointer;
-            } 
-
-            .button:hover,
-            .button:focus {
-                cursor: pointer;
-                transition: all .3s ease;
-                background-color: variables.$gold;
-                font-size: 1.1rem;
-                border: 2px solid variables.$gold;
-                color: variables.$white;
-            }
-        }   
+        padding: 50px 0;
     }
 
     .wrapper ul {
@@ -94,21 +52,23 @@
         }
         
     }
-    p {
-        width: 60%;
-        margin: 0 auto;
-    }
+    
 
 
 }
 
 footer {
+    background-color: #2d2e32;
+
     .wrapper {
-        padding: 0;
-    }
+        padding: 25px;
+        color: #fff;
+        font-size: 0.8rem;
+        font-family: variables.$subheadingFont;
+     }
 
     text-align: center;
     padding: 10px 0;
     color: variables.$black;
-    border-top: 2px solid variables.$white;
+    ;
 }

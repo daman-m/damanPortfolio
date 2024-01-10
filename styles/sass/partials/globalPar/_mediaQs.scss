@@ -2,34 +2,37 @@
 
 
 @media (max-width:1140px) {
+
+
+  // PROJECTSSS
+  body .projects .wrapper .projectListItem {
+    flex-direction: column;
+  }
+  body .projects  .projectinfo { 
+    width: auto;
+  }
+  
+  body .projects .imgContainer {
+    width: 100%;
+  }
+  body .projects  img {
+    width: 100%;
+  }
  
 
-    // PROJECTSSS
-    body .projects .projectListItem .projectinfo {
-        text-align: center;
-        margin-top: 10px;
-        padding-left: 0;
-    }
-    .projects .projectListItem {
-     flex-direction: column;
-    }
+  .contact .form {
+    width: 80%;
+  }
 
-    .projects .projectListItem .imgContainer {
-        margin: 0 auto;
-    }
+  .contact .contactP {
+    width: 80%;
+  }
 
-    .contact .form {
-        width: 80%;
-    }
-    .contact .contactP {
-        width: 80%;
-    }
+  // SKILLS
 
-    // SKILLS
-
-    .skills .wrapper ul li {
-        min-width: 120px
-    }
+  .skills .wrapper ul li {
+    min-width: 120px
+  }
 }
 
 
@@ -37,148 +40,177 @@
 
 @media (max-width:900px) {
 
-    //HOME
+  //HOME
 
-    body header .content  { 
-        padding-top: 5rem;
-    }
-    body header .content span {
-        justify-content: center;
-    }
+  body header .content {
+    padding-top: 5rem;
+  }
 
-
-    body header .content h1 {
-        font-size: 2rem;
-        padding-top: 20px;
-    }
-
-    body header .content {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    body header .content .img {
-        margin: 0 auto;
-    }
-
-    body header .content .text {
-        width:auto
-    }
-
-    header .techStack {
-        flex-direction: column;
-    }
-
-    header .techStack p {
-        border-bottom: 2px solid rgba(45,46,50,.5);
-        border-right: none;
-        margin-bottom: 1.5rem;
-        margin-right: 0;
-        padding-bottom: 1rem;
-        padding-right: 0;
-    }
+  body header .content span {
+    justify-content: center;
+  }
 
 
+  body header .content h1 {
+    font-size: 2rem;
+    padding-top: 20px;
+  }
 
-    //ABOUT
+  body header .content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 
-    .about .flexBox {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .about .wrapper .flexBox .imgContainer {
-        margin-right: 0%;
-        margin-bottom: 5px;
-    }
+  body header .content .img {
+    margin: 0 auto;
+  }
 
-    // PROJECTS
+  body header .content .text {
+    width: auto
+  }
 
-    .projects .projectListItem .imgContainer {
-        width: 100%;
-    
-    }
-    .projects .wrapper .projectListItem .imgContainer img {
-        width: 100%;
-    }
+  header .techStack {
+    flex-direction: column;
+  }
 
-    // CONTACT
+  header .techStack p {
+    border-bottom: 2px solid rgba(45, 46, 50, .5);
+    border-right: none;
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+    padding-bottom: 1rem;
+    padding-right: 0;
+  }
 
-    .contact  .wrapper fieldset form .button {
-        width: 45%;
-    }
-    
+  body header {
+    height: auto;
+    margin-bottom: 50px;
+  }
+  //ABOUT
+
+  .about .flexBox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body .about .info {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  body .about .info h2 {
+    padding-bottom: 5px;
+  }
+
+  .about .wrapper .flexBox .imgContainer {
+    margin-right: 0%;
+    margin-bottom: 5px;
+  }
+
+  // PROJECTS
+
+body .projects  .projectinfo { 
+  width: auto;
+}
+
+body .projects .imgContainer {
+  width: 100%;
+}
+body .projects  img {
+  width: 100%;
+}
+
+
+
+  
+
+ 
+
+  // CONTACT
+
+  .contact .wrapper fieldset form .button {
+    width: 45%;
+  }
+
 }
 
 
 @media (max-width:730px) {
-    header nav .hamburger {
-        display: block;
-        z-index: 10;
-        position: fixed;
-        right: 20px;
-    }
+  header nav .hamburger {
+    display: block;
+    z-index: 10;
+    position: fixed;
+    right: 20px;
+  }
 
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    } 
-    .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    } 
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
 
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    } 
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
 
-    .navMenu {
-        position: fixed;
-        left: -100%;
-        top:0px;
-        gap: 0;
-        flex-direction: column;
-        justify-content: center;
-        background-color: variables.$background;
-        width: 100%;
-        height: 100vh;
-        text-align: center;
-        transition: 0.3s;
-        z-index: 10;
-        padding: 0;
-    }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 
-    .navMenu li {
-        margin: 25px;
-        font-size: larger;
-    }
+  .navMenu {
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    gap: 0;
+    flex-direction: column;
+    justify-content: center;
+    background-color: variables.$background;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 10;
+    padding: 0;
+  }
 
-    .navMenu.active {
-        left: 0;
-    }
+  .navMenu li {
+    margin: 25px;
+    font-size: larger;
+  }
+
+  .navMenu.active {
+    left: 0;
+  }
 }
 
 @media (max-width:500px) {
-    html {
-        font-size: 1rem;
-    }
-    
-  
-    body .wrapper {
-        width: 85%;
-    }
-    body .contact .wrapper ul {
-        width:50%;
-    }
+  html {
+    font-size: 1rem;
+  }
 
-    body .about .wrapper p {
-        width: 95%
-    }
+  body .projects .wrapper  .projectListItem {
+    width: auto;
+  }
 
-    body .about .flexBox .info {
-        width: 100%
-    }
 
-    body .about .flexBox .info p {
-        margin-top: 10px;
-        width: 100%;
-        text-align: justify;
-    }
+  body .wrapper {
+    width: 85%;
+  }
+
+  body .contact .wrapper ul {
+    width: 50%;
+  }
+
+  body .about .wrapper p {
+    width: 95%
+  }
+
+  body .about .flexBox .info {
+    width: 100%
+  }
+
+  body .about .flexBox .info p {
+    margin-top: 10px;
+    width: 100%;
+    text-align: justify;
+  }
 
 }

@@ -77,22 +77,8 @@ header {
     color: variables.$black;
     font-size: 3rem;
     font-family: variables.$headingFont;
-
-    #blinker {
-      color: variables.$gold;
-      animation: blink 1s linear infinite;
-    }
-
-    @keyframes blink {
-      0% {
-        opacity: 100%;
-      }
-
-      50% {
-        opacity: 0%;
-      }
-    }
   }
+  
 
   .button {
     text-align: center;
@@ -142,7 +128,6 @@ header {
 
     }
 
-
   }
 }
 
@@ -177,49 +162,50 @@ header {
 }
 
 
-
 .about {
+  padding: 100px 0px;
   text-align: left;
   color: variables.$black;
+  margin: 0 auto;
+  background-color: #fff;
 
-  .wrapper {
-    border-top: 2px variables.$white solid;
+  .flexBox {
+    // border: 1px solid red;
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .info {
+      // border: 1px solid red;
+      margin-left: 50px;
+
+      h2 {
+        color: variables.$gold;
+        font-family: variables.$subheadingFont;
+        padding-bottom: 10px;
+        font-size: 1.3rem;
+
+      }
 
   }
 
-  .flexBox {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .info {
-      width: 65%;
-
-      p {
-        span {
-          border-bottom: 2px solid variables.$gold;
-          font-weight: bolder;
-        }
-
-        line-height: 1.5;
-      }
-    }
-
+  
     .imgContainer {
       height: fit-content;
       width: fit-content;
-      border-radius: 50%;
-      border: 2px solid variables.$gold;
+      border-radius: 20px;
       margin-right: 10px;
+      box-shadow: -4px -4px 6px rgba(0, 0, 0, 0.1);
+
 
       img {
-        width: 300px;
-        padding: 10px;
-        border-radius: 50%;
+        width: 320px;
+        border-radius: 20px;
       }
     }
-
-    ;
-  }
+  
 
 }
