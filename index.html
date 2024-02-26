@@ -22,283 +22,206 @@
 
 <body>
   <header id="home">
-    <!-- <div class="wrapper"> -->
     <nav>
-      <h3 class="logo">
-        Daman.M
-      </h3>
+      <h3 class="logo">Daman.M</h3>
       <ul class="navMenu">
         <li class="navItem"><a href="#home">home</a></li>
         <li class="navItem"><a href="#about">about</a></li>
         <li class="navItem"><a href="#projects">projects</a></li>
         <li class="navItem"><a href="#contact">contact</a></li>
-        <li class="mobileMenu"> <img src="./assets/mobileMenu.svg" alt="hamburgerMenu"></li>
       </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </nav>
-    <section class="landing">
-      <div class="wrapper container">
-        <div class="content">
-          <div class="landingMain">
-            <div class="text">
-              <h1>Software Developer</h1>
-              <br>
-              <p>Hello! I'm Daman Matharoo, a dedicated Software Developer crafting innovative solutions based out of
-                Toronto, Canada. 🌐</p>
-              <span>
-                <a href="https://www.linkedin.com/in/daman-matharoo-b06346208/" target="_blank">
-                  <img src="./assets/linkedin.svg" alt=" A link to my linkedin page ">
-                </a>
-                <a href="https://github.com/daman-m" target="_blank">
-                  <img src="./assets/github.svg" alt="A link to my Github page">
-                </a>
-              </span>
-            </div>
-            <div class="imgContainer">
-              <img src="./assets/portfolioPic.jpg" alt="Picture of me!">
-            </div>
-          </div>
+    <div class="wrapper">
+      <div class="content">
+        <div class="text">
+          <h1>Software Developer</h1>
+          <br>
+          <p>Hello! I'm Daman Matharoo, a dedicated Software Developer crafting innovative solutions based in Toronto,
+            Canada. 📍</p>
+          <span>
+            <a href="https://www.linkedin.com/in/daman-matharoo-b06346208/" target="_blank">
+              <img src="./assets/linkedin.svg" alt=" A link to my linkedin page ">
+            </a>
+
+            <a href="https://github.com/daman-m" target="_blank">
+              <img src="./assets/github.svg" alt="A link to my Github page">
+            </a>
+
+            <a class="button" href="./assets/Resume.pdf" download="Resume.pdf">Resume</a>
+          </span>
         </div>
-        <div>
-          skills
+        <div class="img">
+          <div class="imgContainer" id="spin">
+            <img class="profilePic" src="./assets/portfolioPic.jpg" alt="picture of Daman with water behind him.">
+          </div>
         </div>
       </div>
-    </section>
-    <!-- </div>END WRAPPER -->
-  </header>
-  <main>
-    <section id="about" class="about">
 
-      <div class="wrapper">
-        <h2>About Me</h2>
-        <div class="flexBox">
-          <div class="info">
-            <p>Hi, my name is <span> Daman </span> and I'm a <span> web developer</span>. I am passionate
-              about creating engaging, accessible and responsive websites and apps. I have worked in the
-              customer service industry for nearly a decade where I was able to develop my aptitude for
-              effective communication, leadership and complex problem-solving. I recognize the importance
-              of client satisfaction and understanding the clients needs. This enables me to better assist
-              my clients with their technological needs and provide them with the best experience
-              possible.
-              <br>
-              <br>
-
-              When I'm not making cool websites, I like to watch anime, play soccer and explore new coffee
-              shops around the city.
-            </p>
-          </div>
-         
-        </div>
-
-      </div><!-- END WRAPPER -->
-    </section>
-    <section class="skills">
-      <div class="wrapper">
-        <h2>Skills</h2>
-        <div class="icons">
+      <div class="techStack">
+        <p>Tech Stack</p>
+        <div class="stackIcons">
           <ul>
             <li>
-              <i class="fa-brands fa-html5 fa-3x" aria-hidden="true"></i>
-              <p>HTML5</p>
+              <img src="https://skillicons.dev/icons?i=html,css" alt="skill-icon">
             </li>
             <li>
-              <i class="fa-brands fa-css3-alt fa-3x" aria-hidden="true"></i>
-              <p>CSS3</p>
+              <img src="https://skillicons.dev/icons?i=js,ts" alt="skill-icon">
             </li>
             <li>
-              <i class="fa-brands fa-sass fa-3x" aria-hidden="true"></i>
-              <p>Sass</p>
+              <img src="https://skillicons.dev/icons?i=react,nodejs" alt="skill-icon">
             </li>
             <li>
-              <i class="fa-brands fa-square-js fa-3x" aria-hidden="true"></i>
-              <p>JavaScript</p>
+              <img src="https://skillicons.dev/icons?i=nextjs,gatsby" alt="skill-icon">
             </li>
             <li>
-              <i class="fa-brands fa-react fa-3x" aria-hidden="true"></i>
-              <p>React</p>
+              <img src="https://skillicons.dev/icons?i=firebase,mongodb" alt="skill-icon">
             </li>
             <li>
-              <i class="fa-solid fa-bolt" aria-hidden="true"></i>
-              <p>Chakra UI</p>
-            </li>
-            <li>
-              <i class="fa-solid fa-gears fa-3x" aria-hidden="true"></i>
-              <p>RESTful <span>APIs</span></p>
-            </li>
-            <li>
-              <i class="devicon-firebase-plain" aria-hidden="true"></i>
-              <p>Firebase</p>
-            </li>
-            <li>
-              <i class="fa-brands fa-git-alt fa-3x" aria-hidden="true"></i>
-              <p>Git</p>
-            </li>
-            <li>
-              <i class="fa-brands fa-github fa-3x" aria-hidden="true"></i>
-              <p>GitHub</p>
-            </li>
-            <li>
-              <i class="fa-solid fa-mobile-screen-button fa-3x" aria-hidden="true"></i>
-              <p>Responsive <span>Design</span></p>
-            </li>
-            <li><i class="fa-solid fa-universal-access fa-3x" aria-hidden="true"></i>
-              <p>Web <span>Accessibility</span></p>
+              <img src="https://skillicons.dev/icons?i=materialui,scss" alt="skill-icon">
             </li>
           </ul>
         </div>
-    </section>
+      </div>
     </div><!-- END WRAPPER -->
+  </header>
+  <main>
+    <section id="about" class="about">
+      <div class="wrapper">
+        <div class="flexBox">
+          <div class="imgContainer">
+            <img class="aboutLaptop" src="./assets/about.png" alt="picture of a laptop on desk with plants and notepad and phone and coffee to the side.">
+          </div>
+          <div class="info">
+            <h2>About Me</h2>
+            <p>As a dynamic Software Developer, I am passionate about innovating and streamlining software development processes. My expertise lies in seamlessly integrating APIs, crafting intuitive user interfaces, and automating test suites. With a keen focus on client satisfaction, I prioritize understanding and meeting client needs, ensuring that they receive optimal technological solutions tailored to their requirements. This client-centric approach not only enhances their experience but also drives successful and efficient project outcomes.
+              <br>
+              <br>
+              When I'm not looking at screens, I like to play soccer and explore new coffee shops around
+              the city.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--END WRAPPER -->
     </section>
-
     <section id="projects" class="projects">
       <div class="wrapper">
         <h2>Projects</h2>
 
-        <div class="projectListItem">
-          <div class="imgContainer">
-            <img src="./assets/notInstaDeviceShots.png" alt="screenshot of 'Not Insta' project">
-          </div><!-- END IMG CONTAINER -->
-          <div class="projectinfo">
-            <h3>Not Insta</h3>
-            <h4> ReactJS | RESTful API | Firebase | CSS | Chakra UI </h4>
-            <p> This is a full stack social media website. Users can sign up and post pictures to a shared
-              gallery. They can also interact with other posts by liking and commenting. Built using
-              Firebase authentication and database built using Firebase cloud firestore and storage.
-            </p>
-            <a class="button" href="https://notinsta.netlify.app/" target="_blank">View Live</a>
-            <a class="button" href="https://github.com/daman-m/notInsta" target="_blank">View Code</a>
-          </div><!-- END PORJECT INFO -->
-        </div><!-- END PROJECT LIST ITEM -->
+        <div class="projectGrid">
 
-        <div class="projectListItem">
-          <div class="imgContainer">
-            <img src="./assets/wordGameDeviceShots.png" alt="screenshot of 'What do you know?' project">
-          </div><!-- END IMG CONTAINER -->
-          <div class="projectinfo">
-            <h3>What do you know?</h3>
-            <h4> ReactJS | RESTful API | Firebase | CSS </h4>
-            <p> This is a fun homophonous word game. Using APIs to find the words and definition. Users will
-              be presented with two randomly generated homophonous words and need to select the correct
-              one.
-            </p>
-            <a class="button" href="https://whatdouno.netlify.app/" target="_blank">View Live</a>
-            <a class="button" href="https://github.com/JunoProjectFour/whatchaKnoHuh" target="_blank">View
-              Code</a>
-          </div><!-- END PORJECT INFO -->
-        </div><!-- END PROJECT LIST ITEM -->
+          <div class="projectListItem">
+            <div class="imgContainer">
+              <img src="./assets/notInsta.png" alt="screenshot of 'Not Insta' project">
+            </div><!-- END IMG CONTAINER -->
+            <div class="projectinfo">
+              <h3>Instagram Clone</h3>
+              <h4> ReactJS | RESTful API | Firebase | Chakra UI </h4>
+              <p> This is a full stack social media website. Users can sign up and post pictures to a shared gallery. They
+                can also interact with other posts by liking and commenting. Built using Firebase authentication and
+                database built using Firebase cloud firestore and storage.
+              </p>
+              <div class="pLinks">
+                <a class="button" href="https://notinsta.netlify.app/" target="_blank">View Live</a>
+                <a class="button" href="https://github.com/daman-m/notInsta" target="_blank">View Code</a>
+              </div>
+            </div><!-- END PORJECT INFO -->
+          </div><!-- END PROJECT LIST ITEM -->
+  
+          <div class="projectListItem">
+            <div class="imgContainer">
+              <img src="./assets/wordGame.png" alt="screenshot of 'What do you know?' project">
+            </div><!-- END IMG CONTAINER -->
+            <div class="projectinfo">
+              <h3>Word Game</h3>
+              <h4> ReactJS | RESTful API | Firebase | CSS </h4>
+              <p> This is a fun homophonous word game. Using APIs to find the words and definition. Users will be
+                presented with two randomly generated homophonous words and need to select the correct one.
+              </p>
+              <div class="pLinks">
 
-        <div class="projectListItem">
-          <div class="imgContainer">
-            <img src="./assets/sancHelpDeviceShots.png" alt="screenshot of 'Sanctuary Helpers'project ">
-          </div><!-- END IMG CONTAINER -->
-          <div class="projectinfo">
-            <h3>Sanctuary Helpers</h3>
-            <h4>HTML | CSS | SCSS | JAVASCRIPT </h4>
-            <p>A multi-page PSD conversion based on <a
-                href="https://drive.google.com/drive/folders/1rEQw1xk0HskftulZ9P_4hQATE0KUHAHu?usp=share_link"
-                target="_blank">these files</a> while keeping the page responsive at all sizes.</p>
-            <a class="button" href="https://delightful-otter-8fb98c.netlify.app/index.html" target="_blank">View
-              Live</a>
-            <a class="button" href="https://github.com/daman-m/DamanMatharooProjectOne.git" target="_blank">View
-              Code</a>
-          </div> <!-- END PROJECT INFO -->
-        </div><!-- END PROJECT LIST ITEM -->
+              <a class="button" href="https://whatdouno.netlify.app/" target="_blank">View Live</a>
+              <a class="button" href="https://github.com/JunoProjectFour/whatchaKnoHuh" target="_blank">View Code</a>
+              </div>
+            </div><!-- END PORJECT INFO -->
+          </div><!-- END PROJECT LIST ITEM -->
+  
+          <div class="projectListItem">
+            <div class="imgContainer">
+              <img src="./assets/sancHelp.png" alt="screenshot of 'Sanctuary Helpers'project ">
+            </div><!-- END IMG CONTAINER -->
+            <div class="projectinfo">
+              <h3>Sanctuary Helpers</h3>
+              <h4>HTML | CSS | SCSS | JAVASCRIPT </h4>
+              <p>A multi-page PSD conversion based on <a
+                  href="https://drive.google.com/drive/folders/1rEQw1xk0HskftulZ9P_4hQATE0KUHAHu?usp=share_link"
+                  target="_blank">these files</a> while keeping the page responsive at all sizes.</p>
+                  <div class="pLinks">
 
-        <div class="projectListItem">
-          <div class="imgContainer">
-            <img src="./assets/spacesDeviceShots.png" alt="screenshot of 'Spaces'project ">
-          </div><!-- END IMG CONTAINER -->
-          <div class="projectinfo">
-            <h3>Spaces</h3>
-            <h4>HTML | CSS | JAVASCRIPT </h4>
-            <p>A single-page PSD conversion based on client brief and design files. The website features
-              information about the studio while keeping the page responsive at all sizes.</p>
-            <a class="button" href="https://designspaces.netlify.app/" target="_blank">View Live</a>
-            <a class="button" href="https://github.com/daman-m/spacessite" target="_blank">View Code</a>
-          </div> <!-- END PROJECT INFO -->
-        </div><!-- END PROJECT LIST ITEM -->
+              <a class="button" href="https://delightful-otter-8fb98c.netlify.app/index.html" target="_blank">View
+                Live</a>
+              <a class="button" href="https://github.com/daman-m/DamanMatharooProjectOne.git" target="_blank">View
+                Code</a>
+                  </div>
+            </div> <!-- END PROJECT INFO -->
+          </div><!-- END PROJECT LIST ITEM -->
+  
+          <div class="projectListItem">
+            <div class="imgContainer">
+              <img src="./assets/spaces.png" alt="screenshot of 'Spaces'project ">
+            </div><!-- END IMG CONTAINER -->
+            <div class="projectinfo">
+              <h3>Spaces</h3>
+              <h4>HTML | CSS | JAVASCRIPT </h4>
+              <p>A single-page PSD conversion based on client brief and design files. The website features information
+                about the studio while keeping the page responsive at all sizes.</p>
+                <div class="pLinks">
+
+              <a class="button" href="https://designspaces.netlify.app/" target="_blank">View Live</a>
+              <a class="button" href="https://github.com/daman-m/spacessite" target="_blank">View Code</a>
+                </div>
+            </div> <!-- END PROJECT INFO -->
+          </div><!-- END PROJECT LIST ITEM -->
+        </div>
+
 
 
       </div><!-- END WRAPPER -->
     </section>
     <section id="contact" class="contact">
       <div class="wrapper">
-        <h2>Get in Touch</h2>
-        <ul>
-          <li>
+        <h2>Contact</h2>
+        <div class="text">
+          <br>
+          <p>Thanks for stopping by! 😊 Feel free to connect with me on LinkedIn or shoot me an email.</p>
+          <span>
             <a href="https://www.linkedin.com/in/daman-matharoo-b06346208/" target="_blank">
               <img src="./assets/linkedin.svg" alt=" A link to my linkedin page ">
             </a>
-          </li>
-          <li>
+  
             <a href="https://github.com/daman-m" target="_blank">
-              <img src="./assets/githubGreen.svg" alt="A link to my Github page">
+              <img src="./assets/github.svg" alt="A link to my Github page">
             </a>
-          </li>
-
-        </ul>
-        <p class="contactP">I appreciate you taking the time to see what I've been working on. Please feel free
-          to send a message, email, or connect with me on LinkedIn.</p>
-
-        <fieldset class="form">
-          <form action="https://formspree.io/f/mwkzjdak" method="POST" class="getInTouchForm" name="getInTouchForm">
-            <label for="name"></label>
-            <input type="text" id="name" name="name" class="name" placeholder="name">
-
-            <label for="email"></label>
-            <input type="text" id="name" name="email" class="name" placeholder="email">
-
-            <label for="message"></label>
-            <textarea name="message" id="message" class="messageArea" cols="30" rows="10"
-              placeholder="message"></textarea>
-
-            <button class="button" type="submit" formtarget="_blank"> Submit</button>
-
-          </form>
-        </fieldset>
-
-
-
+          </span>
+        </div>
       </div><!-- END WRAPPER -->
 
     </section>
   </main>
   <footer>
     <div class="wrapper">
-      <p>Created by Daman Matharoo 2022</p>
+      <p>Copyright © 2024. All rights are reserved</p>
     </div>
   </footer>
-  <script>
+</body>
+<script>
 
-    // FUNC FOR TYPEWRITER 
-    function sleep(ms) {
-      return new Promise((resolve) => setTimeout(resolve, ms))
-    }
-
-    const webDev = ['Web Developer'];
-    const el = document.getElementById("webDev");
-
-    let sleepTime = 150;
-
-    let curPhraseIndex = 0;
-
-    const writeLoop = async () => {
-
-      let curWord = webDev[curPhraseIndex];
-      console.log(curWord);
-
-      for (let i = 0; i < curWord.length; i++) {
-        el.innerText = curWord.substring(0, i + 1);
-        await sleep(sleepTime);
-
-      }
-
-      await sleep(sleepTime * 10);
-
-    };
-
-    writeLoop()
-
-
+  
     // FUNC FOR HAMBURGER MENU
 
     const hamburger = document.querySelector(".hamburger");
@@ -314,10 +237,6 @@
       navMenu.classList.remove("active");
     }))
 
-
-
-
-  </script>
-</body>
+</script>
 
 </html>
